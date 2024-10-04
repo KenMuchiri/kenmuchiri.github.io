@@ -46,37 +46,38 @@
     <!-- Header -->
 
     <header class="fixed flex flex-row z-10 top-0 right-0 left-0 justify-between items-center p-4 bg-transparent box-border">
-        <h1 class="text-md lg:text-3xl md:text-2xl font-bold font-audiowide uppercase">Muchiri.</h1>
-    
-        <!-- Navigation links for larger screens -->
-        <nav class="hidden lg:flex ml-2 space-x-2 uppercase font-tickerbit text-xs lg:text-sm items-baseline">
-            <a href="#home" id="home-link" class="text-white hover:text-green-500">Home.</a>
-            <a href="#about" id="about-link" class="text-white hover:text-green-500">About.</a>
-            <a href="#services" id="services-link" class="text-white hover:text-green-500">Services.</a>
-            <a href="#resume" id="resume-link" class="text-white hover:text-green-500">Resume.</a>
-            <a href="#work" id="work-link" class="text-white hover:text-green-500">Work.</a>
-            <a href="#blog" id="blog-link" class="text-white hover:text-green-500">Blog.</a>
-            <a href="#contact" id="contact-link" class="text-white hover:text-green-500">Contact.</a>
-        </nav>
-    
-        <!-- Dropdown for smaller screens -->
-        <div class="lg:hidden dropdown">
-            <div tabindex="0" role="button" class="btn btn-ghost btn-circle">
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h7" />
-                </svg>
-            </div>
-            <ul tabindex="0" class="menu menu-sm dropdown-content bg-glass rounded-box z-[1] w-42 p-2 shadow fixed top-8 right-2 align-middle items-start">
-                <li><a href="#home" id="home-link" class="font-tickerbit text-sm  hover:text-yellow-500 text-green-400">Home.</a></li> 
-                <li><a href="#about" id="about-link" class="font-tickerbit text-sm  hover:text-yellow-500 text-green-400">About.</a></li> 
-                <li><a href="#services" id="services-link" class="font-tickerbit text-sm  hover:text-yellow-500 text-green-400">Services.</a></li>
-                <li><a href="#resume" id="resume-link" class="font-tickerbit text-sm  hover:text-yellow-500 text-green-400">Resume.</a></li>
-                <li><a href="#work" id="work-link" class="font-tickerbit text-sm hover:text-yellow-500 text-green-400">Work.</a></li>
-                <li><a href="#blog" id="blog-link" class="font-tickerbit text-sm hover:text-yellow-500 text-green-400">Blog.</a></li>
-                <li><a href="#contact" id="contact-link" class="font-tickerbit text-sm hover:text-yellow-500 text-green-400">Contact.</a></li>
-            </ul>
+    <h1 class="text-md lg:text-3xl md:text-2xl font-bold font-audiowide uppercase">Muchiri.</h1>
+
+    <!-- Navigation links for larger screens -->
+    <nav class="hidden lg:flex ml-2 space-x-2 uppercase font-tickerbit text-xs lg:text-sm items-baseline box-border">
+        <a href="#home" id="home-link" class="text-white hover:text-green-500">Home.</a>
+        <a href="#about" id="about-link" class="text-white hover:text-green-500">About.</a>
+        <a href="#services" id="services-link" class="text-white hover:text-green-500">Services.</a>
+        <a href="#resume" id="resume-link" class="text-white hover:text-green-500">Resume.</a>
+        <a href="#work" id="work-link" class="text-white hover:text-green-500">Work.</a>
+        <a href="#blog" id="blog-link" class="text-white hover:text-green-500">Blog.</a>
+        <a href="#contact" id="contact-link" class="text-white hover:text-green-500">Contact.</a>
+    </nav>
+
+    <!-- Dropdown for smaller screens -->
+    <div class="lg:hidden dropdown">
+        <div tabindex="0" role="button" class="btn btn-ghost btn-circle">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h7" />
+            </svg>
         </div>
+        <ul tabindex="0" class="menu menu-sm dropdown-content bg-glass rounded-box z-[1] w-42 p-2 shadow fixed top-8 right-2 align-middle items-start">
+            <li><a href="#home" id="home-link" class="font-tickerbit text-sm text-white hover:text-green-500">Home.</a></li> 
+            <li><a href="#about" id="about-link" class="font-tickerbit text-sm text-white hover:text-green-500">About.</a></li> 
+            <li><a href="#services" id="services-link" class="font-tickerbit text-sm text-white hover:text-green-500">Services.</a></li>
+            <li><a href="#resume" id="resume-link" class="font-tickerbit text-sm text-white hover:text-green-500">Resume.</a></li>
+            <li><a href="#work" id="work-link" class="font-tickerbit text-sm text-white hover:text-green-500">Work.</a></li>
+            <li><a href="#blog" id="blog-link" class="font-tickerbit text-sm text-white hover:text-green-500">Blog.</a></li>
+            <li><a href="#contact" id="contact-link" class="font-tickerbit text-sm text-white hover:text-green-500">Contact.</a></li>
+        </ul>
+    </div>
     </header>
+
 
     <!-- Hero Section -->
     <section id="home" class="hero relative h-screen flex flex-col justify-center items-center bg-cover bg-center box-border" style="background-image: url('src/images/wallpaper.jfif');">
@@ -88,7 +89,7 @@
         <h1 class="text-8xl md:text-9xl lg:text-12xl font-bold font-switzer">Hello</h1>
         <p class="mt-4 ml-2 text-sm font-teko">_________ this is me being creative</p>
     </div>
-    <div class="fixed bottom-4 left-0 text-left px-8 py-4 gap-2 space-y-1 z-800 sm:text-xs hidden md:fixesd lg:fixed xl:block">
+    <div class="fixed bottom-4 left-0 text-left px-8 py-4 gap-2 space-y-1 z-800 sm:text-xs hidden md:fixed lg:fixed xl:block">
         <!-- Contact Us Link -->
         <a href="src/pages/contact.html" class="text-white text-xs uppercase font-tickerbit hover:underline inline-flex items-start">
         Contact Me
@@ -101,8 +102,6 @@
         <!-- Location Section -->
         <div id="location" class="text-xs font-tickerbit uppercase">[Fetching location...]</div>
     </div>
-    <!-- Clock positioned in the bottom left corner -->
-    <div id="clock" class=" text-xl bg-transparent p-4 font-tickerbit rounded-lg shadow-lg z-30">
         
     </div>
 
