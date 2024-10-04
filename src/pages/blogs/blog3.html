@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Handjet:wght@100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=New+Amsterdam&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link rel="icon" href="../images/advice.jfif" />
+    <link href="../output.css" rel="stylesheet" />
+    <link href="../input.css" rel="stylesheet" />
+    <title>CSS Grid vs Flexbox</title>
+    <!-- Tailwind CSS and DaisyUI -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/daisyui@latest/dist/full.css"
+    />
+
+    <!-- Optional: Tailwind config -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {},
+        },
+        daisyui: {
+          themes: ["light", "dark"],
+        },
+      };
+    </script>
+    <style>
+      /* Custom fonts */
+      .font-prime {
+        font-family: "Courier Prime", monospace;
+        font-display: swap;
+      }
+      .font-handjet {
+        font-family: "Handjet", sans-serif;
+      }
+      .font-audiowide {
+        font-family: "Audiowide", sans-serif;
+      }
+      .font-switzer {
+        font-family: "Switzer", sans-serif;
+      }
+      .font-hakobi {
+        font-family: "Hakobi Condensed", sans-serif;
+      }
+      .font-amsterdam {
+        font-family: "New Amsterdam", sans-serif;
+      }
+    </style>
+  </head>
+  <body class="bg-base-100 text-base-content">
+    <!-- Navbar -->
+    <header class="navbar bg-base-300 px-6 py-4 shadow-md">
+      <div class="flex-1">
+        <a href="#" class="btn btn-ghost normal-case text-xl font-bold"
+          >Web Dev Simplified</a
+        >
+      </div>
+      <div class="flex-none">
+        <button class="btn btn-primary">Contact Me</button>
+      </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container mx-auto px-6 py-12">
+      <section class="prose lg:prose-xl mx-auto">
+        <h1 class="text-center mb-6 text-4xl font-bold">
+          CSS Grid vs Flexbox: When to Use Each
+        </h1>
+
+        <p>
+          When it comes to modern web layout techniques, two of the most
+          commonly used systems are <strong>CSS Grid</strong> and
+          <strong>Flexbox</strong>. While both offer powerful ways to create
+          responsive layouts, each has specific use cases where it excels. In
+          this post, we'll compare CSS Grid and Flexbox, discuss their
+          differences, and help you decide which one to use depending on your
+          needs.
+        </p>
+
+        <h2>Understanding CSS Grid</h2>
+        <p>
+          CSS Grid is a two-dimensional layout system, meaning it can control
+          both rows and columns simultaneously. It gives you the ability to
+          design complex layouts by defining grid containers and placing grid
+          items within those containers. With Grid, you can arrange items in
+          rows, columns, or even layered over each other with ease.
+        </p>
+
+        <p>A simple example of CSS Grid layout looks like this:</p>
+
+        <pre><code class="language-css">
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.grid-item {
+    background-color: #f0f0f0;
+    padding: 20px;
+    border: 1px solid #ccc;
+}
+      </code></pre>
+
+        <p>
+          In the above code, we’ve created a grid with three equal-width
+          columns. The <code>grid-template-columns</code> property defines the
+          columns, and <code>gap</code> adds spacing between grid items.
+        </p>
+
+        <h2>Understanding Flexbox</h2>
+        <p>
+          Flexbox, short for Flexible Box Layout, is a one-dimensional layout
+          system. It excels at distributing space along a single axis—either
+          horizontally or vertically. Flexbox is ideal for creating layouts
+          where items need to be dynamically sized based on available space,
+          such as navigation bars, card layouts, or centering content.
+        </p>
+
+        <p>Here’s a simple Flexbox example:</p>
+
+        <pre><code class="language-css">
+.flex-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.flex-item {
+    background-color: #f0f0f0;
+    padding: 20px;
+    border: 1px solid #ccc;
+}
+      </code></pre>
+
+        <p>
+          In this example, the <code>justify-content</code> property evenly
+          spaces the flex items across the container, while
+          <code>align-items</code> vertically centers them.
+        </p>
+
+        <h2>Key Differences Between CSS Grid and Flexbox</h2>
+        <p>
+          While both Grid and Flexbox are useful layout tools, they each serve
+          different purposes:
+        </p>
+
+        <ul>
+          <li>
+            <strong>Grid is two-dimensional:</strong> It controls both rows and
+            columns, allowing for complex layouts.
+          </li>
+          <li>
+            <strong>Flexbox is one-dimensional:</strong> It works in one
+            direction at a time, either as a row or a column.
+          </li>
+          <li>
+            <strong>Content flow:</strong> Flexbox works best for content that
+            needs to adapt to its container. Grid, on the other hand, is more
+            useful when you need to place items in fixed rows and columns.
+          </li>
+          <li>
+            <strong>Positioning:</strong> Grid offers more control over precise
+            placement of items within the layout, while Flexbox shines when you
+            need to align and distribute items dynamically.
+          </li>
+        </ul>
+
+        <h2>When to Use CSS Grid</h2>
+        <p>
+          CSS Grid is ideal for layouts that require both rows and columns to be
+          controlled at the same time. Use Grid when you want to:
+        </p>
+
+        <ul>
+          <li>Create complex, two-dimensional layouts</li>
+          <li>
+            Design grid-based layouts like galleries, dashboards, or entire
+            webpages
+          </li>
+          <li>
+            Position items both horizontally and vertically with precision
+          </li>
+          <li>Have full control over the arrangement of grid items</li>
+        </ul>
+
+        <p>
+          For example, CSS Grid would be perfect for laying out a webpage with a
+          header, sidebar, main content area, and footer:
+        </p>
+
+        <pre><code class="language-css">
+.grid-container {
+    display: grid;
+    grid-template-areas:
+        "header header header"
+        "sidebar main main"
+        "footer footer footer";
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: auto 1fr auto;
+}
+      </code></pre>
+
+        <h2>When to Use Flexbox</h2>
+        <p>
+          Flexbox is perfect for simpler, one-dimensional layouts where you need
+          items to align or distribute space along a single axis. Use Flexbox
+          when you want to:
+        </p>
+
+        <ul>
+          <li>Align items dynamically within a container</li>
+          <li>
+            Build responsive components like navigation bars, cards, or forms
+          </li>
+          <li>Arrange items in a single direction (row or column)</li>
+          <li>
+            Create simple, one-dimensional layouts with flexible widths and
+            heights
+          </li>
+        </ul>
+
+        <p>
+          For instance, if you need to create a responsive navigation bar,
+          Flexbox is an excellent choice:
+        </p>
+
+        <pre><code class="language-css">
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+      </code></pre>
+
+        <h2>Using Grid and Flexbox Together</h2>
+        <p>
+          While Grid and Flexbox serve different purposes, they can also be used
+          together in a complementary way. You can use Grid for the overall page
+          structure and Flexbox to fine-tune the alignment and spacing within
+          individual components.
+        </p>
+
+        <p>
+          For example, a layout might use Grid for the main content structure,
+          while Flexbox could be used to align items within a sidebar or
+          navigation menu:
+        </p>
+
+        <pre><code class="language-css">
+.layout {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+}
+
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+      </code></pre>
+
+        <h2>Conclusion</h2>
+        <p>
+          In conclusion, CSS Grid and Flexbox are both powerful tools, but
+          they’re designed for different types of layouts. Use CSS Grid for
+          two-dimensional layouts where you need to control both rows and
+          columns. Use Flexbox for simpler, one-dimensional layouts or when you
+          need items to align or distribute space along a single axis.
+        </p>
+
+        <p>
+          By understanding the strengths of each layout system, you can make
+          informed decisions about which to use based on the specific
+          requirements of your design. And in many cases, combining both can
+          give you the best of both worlds.
+        </p>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-base-200 py-6 text-center">
+      <p class="text-sm text-base-content">
+        © 2024 Web Dev Simplified - All Rights Reserved.
+      </p>
+    </footer>
+  </body>
+</html>

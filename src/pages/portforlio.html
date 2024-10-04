@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Handjet:wght@100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=New+Amsterdam&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link rel="stylesheet" href="" />
+    <link rel="icon" href="../images/advice.jfif" />
+    <link href="../output.css" rel="stylesheet" />
+    <link href="../input.css" rel="stylesheet" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Muchiri | Portfolio</title>
+    <style>
+      /* Custom fonts */
+      .font-prime {
+        font-family: "Courier Prime", monospace;
+        font-display: swap;
+      }
+      .font-handjet {
+        font-family: "Handjet", sans-serif;
+      }
+      .font-audiowide {
+        font-family: "Audiowide", sans-serif;
+      }
+      .font-switzer {
+        font-family: "Switzer", sans-serif;
+      }
+      .font-hakobi {
+        font-family: "Hakobi Condensed", sans-serif;
+      }
+      .font-amsterdam {
+        font-family: "New Amsterdam", sans-serif;
+      }
+    </style>
+  </head>
+  <body>
+    <header
+      class="fixed flex flex-row z-10 top-0 right-0 left-0 justify-between items-center p-4 bg-transparent box-border"
+    >
+      <h1
+        class="text-md lg:text-3xl md:text-2xl font-bold font-audiowide uppercase text-white"
+      >
+        Muchiri.
+      </h1>
+    </header>
+    <!-- My Work -->
+    <section
+      id="work"
+      class="fflex flex-col relative h-auto items-between box-border bg-black p-10 lg:p-20"
+    >
+      <div class="flex flex-row p-2 items-center box-border">
+        <h1 class="text-sm lg:text-xl font-tickerbit uppercase text-white">
+          [My Work]
+        </h1>
+        <a href="../pages/work.html"
+          ><button
+            class="btn btn-outline text-nowrap text-xs lg:text-md rounded-full ml-6 bg-transparent hover:text-white"
+          >
+            View My Work<i class="fas fa-arrow-right ml-2"></i></button
+        ></a>
+      </div>
+      <div
+        class="flex flex-col md:flex-row lg:flex-row h-auto items-center justify-between box-border mb-20 p-8"
+      >
+        <!-- Work Image -->
+        <div class="flex justify-center items-center p-4">
+          <img
+            src="../images/frqncy1.png"
+            alt="Frequency"
+            class="work-image max-w-xs sm:max-w-xs md:max-w-sm lg:max-w-md xl:max-w-md h-auto sm:h-xs border-2 border-white rounded-lg transition-transform duration-300 ease-in-out transform scale-100 hover:scale-105"
+            id="work-image"
+          />
+        </div>
+        <!-- work items -->
+        <div
+          class="w-full lg:w-full flex flex-col ml-8 lg:ml-14 lg:flex-row justify-center items-center space-y-6 p-8"
+        >
+          <ul
+            class="space-y-4 text-xl lg:text-4xl gap-2 font-tickerbit group text-gray-300 hover:text-white transition-all duration-300"
+          >
+            <li
+              class="work-item uppercase font-tickerbit text-white transition-all duration-300 transform hover:scale-105 hover:translate-x-2"
+              data-image="boomersapp.png"
+            >
+              Boomers
+              <div
+                class="work-description hidden mt-2 font-switzer text-gray-400 text-sm lg:text-md uppercase"
+              >
+                [BRANDING, SEO, UI/UX]
+              </div>
+            </li>
+            <li
+              class="work-item uppercase font-tickerbit text-white transition-all duration-300 transform hover:scale-105 hover:translate-x-2"
+              data-image="frqncy1.png"
+            >
+              Frqncy
+              <div
+                class="work-description hidden mt-2 font-switzer text-gray-400 text-sm lg:text-md uppercase"
+              >
+                [AI, Web Dev, SEO, UI/UX, BRANDING, LOW CODE]
+              </div>
+            </li>
+            <li
+              class="work-item uppercase font-tickerbit text-white transition-all duration-300 transform hover:scale-105 hover:translate-x-2"
+              data-image="bancykitchen.png"
+            >
+              Bancy's Kitchen
+              <div
+                class="work-description hidden mt-2 font-switzer text-gray-400 text-sm lg:text-md uppercase"
+              >
+                [GRAPHICS DESIGN, WEB DEV, SEO, UI/UX]
+              </div>
+            </li>
+            <li
+              class="work-item uppercase font-tickerbit text-white transition-all duration-300 transform hover:scale-105 hover:translate-x-2"
+              data-image="kaleidoscope.jpeg"
+            >
+              Kldscp
+              <div
+                class="work-description hidden mt-2 font-switzer text-gray-400 text-sm lg:text-md uppercase"
+              >
+                [Web Dev, SEO, UI/UX, BRANDING]
+              </div>
+            </li>
+            <li
+              class="work-item uppercase font-tickerbit text-white transition-all duration-300 transform hover:scale-105 hover:translate-x-2"
+              data-image="la ciiris.png"
+            >
+              Ciiri`s
+              <div
+                class="work-description hidden mt-2 font-switzer text-gray-400 text-sm lg:text-md uppercase"
+              >
+                [Web Dev, SEO, UI/UX, lOW CODE DEV]
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 h-auto bg-black">
+      <div
+        class="flex flex-col md:flex-row sm:justify-center lg:flex-row justify-center gap-12 p-10 lg:p-20"
+      >
+        <div class="max-w-md lg:max-w-lg mb-8 lg:mb-0">
+          <h1
+            class="text-4xl lg:text-4xl mb-4 font-bold font-switzer text-white"
+          >
+            LET’S MAKE YOUR IDEAS A REALITY.
+          </h1>
+          <p class="text-base font-switzer text-white">
+            SHARE SOME INFORMATION WITH ME TO GET STARTED.
+          </p>
+        </div>
+        <div class="flex flex-col max-w-md">
+          <div class="mb-6">
+            <p class="text-md font-tickerbit font-bold mb-2 text-gray-500">
+              [WHAT CAN I HELP YOU WITH?]
+            </p>
+            <div class="flex flex-wrap gap-4 text-white">
+              <label class="inline-flex items-center">
+                <input
+                  type="checkbox"
+                  name="services[]"
+                  value="All"
+                  class="form-checkbox text-white"
+                />
+                <span class="ml-2 font-tickerbit sm:text-sm">ALL</span>
+              </label>
+              <label class="inline-flex items-center">
+                <input
+                  type="checkbox"
+                  name="services[]"
+                  value="Design"
+                  class="form-checkbox text-white"
+                />
+                <span class="ml-2 font-tickerbit sm:text-sm">DESIGN</span>
+              </label>
+              <label class="inline-flex items-center">
+                <input
+                  type="checkbox"
+                  name="services[]"
+                  value="Development"
+                  class="form-checkbox text-white"
+                />
+                <span class="ml-2 font-tickerbit sm:text-sm">DEVELOPMENT</span>
+              </label>
+              <label class="inline-flex items-center">
+                <input
+                  type="checkbox"
+                  name="services[]"
+                  value="Marketing"
+                  class="form-checkbox text-white"
+                />
+                <span class="ml-2 font-tickerbit sm:text-sm">MARKETING</span>
+              </label>
+            </div>
+          </div>
+          <div class="w-full">
+            <p class="text-base font-bold mb-2 text-gray-500 font-tickerbit">
+              [CONTACT INFORMATION]
+            </p>
+            <form
+              action="https://formspree.io/f/xjkbqbvz"
+              method="POST"
+              class="flex flex-col text-white"
+            >
+              <label class="text-sm mb-2">FULL NAME*</label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                required
+                class="bg-transparent border-b border-dashed border-white text-white mb-4 p-1 focus:outline-none"
+              />
+
+              <label class="text-sm mb-2">EMAIL*</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                required
+                class="bg-transparent border-b border-dashed border-white text-white mb-4 p-1 focus:outline-none"
+              />
+
+              <label class="text-sm mb-2">COMPANY:</label>
+              <input
+                type="text"
+                id="company"
+                name="company"
+                class="bg-transparent border-b border-dashed border-white text-white mb-4 p-1 focus:outline-none"
+              />
+
+              <label class="text-sm mb-2">MESSAGE:</label>
+              <textarea
+                id="message"
+                name="message"
+                class="bg-transparent border-b border-dashed border-white text-white mb-4 p-1 h-20 focus:outline-none"
+              ></textarea>
+
+              <button
+                type="submit"
+                class="btn glass w-lg font-switzer self-center mt-5 p-5 text-white hover:bg-white hover:text-black transition-all"
+              >
+                SUBMIT
+              </button>
+
+              <!-- Formspree Hidden Attributes (At the End of the Form) -->
+              <input
+                type="hidden"
+                name="_next"
+                value="../pages/thankyou.html"
+              />
+              <input
+                type="hidden"
+                name="_subject"
+                value="New contact form submission!"
+              />
+            </form>
+
+            <!-- Error and Success Message Display -->
+            <div id="form-messages" class="mt-4 text-white"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- socials -->
+    <section class="h-auto box-border bg-black">
+      <div
+        class="flex flex-row flex-wrap justify-between align-top gap-4 p-10 text-white"
+      >
+        <div class="uppercase gap-4">
+          <h5 class="font-tickerbit text-sm items-start p-4">[Instagram]</h5>
+          <a href="https://www.instagram.com/_m.u.c.h.i.r.i.i/"
+            ><p class="font-tickerbit text-sm hover:underline">
+              @_m.u.c.h.i.r.i.i
+            </p></a
+          >
+        </div>
+        <div class="uppercase gap-4">
+          <h5 class="font-tickerbit text-sm items-start p-4">[TikTok]</h5>
+          <a href="https://www.tiktok.com/_m.u.c.h.i.r.i.i/"
+            ><p class="font-tickerbit text-sm hover:underline">
+              @_m.u.c.h.i.r.i.i
+            </p></a
+          >
+        </div>
+        <div class="uppercase gap-4">
+          <h5 class="font-tickerbit text-sm items-start p-4">[Linkedin]</h5>
+          <a href="https://www.linkedin.com/in/kenneth-muchiri-muongi/"
+            ><p class="font-tickerbit text-sm hover:underline">
+              @Kenneth Muchiri
+            </p></a
+          >
+        </div>
+        <div class="uppercase text-white">
+          <h5 class="font-tickerbit text-sm items-start">[Socials]</h5>
+          <div class="flex flex-col font-switzer gap-6">
+            <a
+              href="https://www.linkedin.com/in/kenneth-muchiri-muongi/"
+              target="_blank"
+              class="secondary_link w-inline-block"
+            >
+              <div
+                class="hover:text-green-400 font-tickerbit text-sm hover:underline"
+              >
+                LinkedIn
+              </div>
+            </a>
+            <a
+              href="https://www.instagram.com/_m.u.c.h.i.r.i.i/"
+              target="_blank"
+              class="secondary_link w-inline-block"
+            >
+              <div
+                class="hover:text-green-400 font-tickerbit text-sm hover:underline"
+              >
+                Instagram
+              </div>
+            </a>
+            <a
+              href="https://twitter.com/kenmuchiri_"
+              target="_blank"
+              class="secondary_link w-inline-block"
+            >
+              <div
+                class="hover:text-green-400 font-tickerbit text-sm hover:underline"
+              >
+                Twitter x
+              </div>
+            </a>
+            <a
+              href="https://www.facebook.com/kenmuchiri"
+              target="_blank"
+              class="secondary_link w-inline-block"
+            >
+              <div
+                class="hover:text-green-400 font-tickerbit text-sm hover:underline"
+              >
+                Facebook
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- muchiri -->
+    <section
+      class="flex flex-col h-auto border-t-2 border-white border-b-2 bg-black"
+    >
+      <div class="font-audiowide font-bold py-20 flex w-full">
+        <p
+          class="flex-grow text-center w-full text-6xl sm:text-6xl md:text-9xl lg:text-9xl text-white"
+        >
+          MUCHIRI.
+        </p>
+      </div>
+    </section>
+    <!-- Footer -->
+    <footer class="py-6 text-center bg-black">
+      <p class="font-tickerbit text-xs">
+        Made with ❤ by Ken. &copy; <span id="year"></span> All Rights Reserved.
+      </p>
+      <div class="flex justify-center space-x-4 mt-4">
+        <a
+          href="https://github.com/MuchiriK"
+          class="text-yellow-400 hover:text-white"
+          ><i class="fab fa-github"></i
+        ></a>
+        <a
+          href="https://www.linkedin.com/in/kenneth-muchiri-muongi/"
+          class="text-yellow-400 hover:text-white"
+          ><i class="fab fa-linkedin"></i
+        ></a>
+      </div>
+    </footer>
+    <script src="../scrpits/script.js"></script>
+  </body>
+</html>

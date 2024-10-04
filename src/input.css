@@ -1,0 +1,52 @@
+@font-face {
+     font-family: 'MyCustomFont';
+     src: url('/assets/fonts/MyCustomFont.woff2') format('woff2'),
+          url('/assets/fonts/MyCustomFont.woff') format('woff');
+     font-weight: normal;
+     font-style: normal;
+ }
+ /* @font-face {
+     font-family: 'Tickerbit';
+     src: url('../src/fonts/Tickerbit-mono.otf') format('otf'),
+          url('') format('');
+     font-weight: normal;
+     font-style: normal;
+   } */
+   @font-face {
+     font-family: 'Tickerbit Mono';
+     src: url('https://assets.website-files.com/65c6086abb13377901f11d01/65cb1b2a212cee69867fba3a_Tickerbit-mono.otf') format('opentype');
+     font-weight: 400;
+     font-style: normal;
+     font-display: swap;
+ }
+ @font-face {
+     font-family: 'Hakobi Condensed';
+     src: url('https://assets.website-files.com/65c6086abb13377901f11d01/65cf4c327875169dfe02e05a_Hakobi%20Condensed.woff') format('woff');
+     font-weight: 400;
+     font-style: normal;
+     font-display: swap;
+ }
+ @font-face {
+     font-family: 'Switzer';
+     src: url('https://assets.website-files.com/65c6086abb13377901f11d01/65cb1a16e51a73c14845a4fb_Switzer-Regular.ttf') format('truetype');
+     font-weight: 400;
+     font-style: normal;
+     font-display: swap;
+ }
+ @font-face {
+     font-family: 'Switzer';
+     src: url('https://assets.website-files.com/65c6086abb13377901f11d01/65cb1a1648d138aea29acee0_Switzer-Bold.ttf') format('truetype');
+     font-weight: 700;
+     font-style: normal;
+     font-display: swap;
+ }
+ *{
+    box-sizing: border-box;
+ }
+ 
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+  
