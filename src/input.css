@@ -1,10 +1,4 @@
-@font-face {
-     font-family: 'MyCustomFont';
-     src: url('/assets/fonts/MyCustomFont.woff2') format('woff2'),
-          url('/assets/fonts/MyCustomFont.woff') format('woff');
-     font-weight: normal;
-     font-style: normal;
- }
+
  /* @font-face {
      font-family: 'Tickerbit';
      src: url('../src/fonts/Tickerbit-mono.otf') format('otf'),

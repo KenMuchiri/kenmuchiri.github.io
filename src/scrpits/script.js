@@ -97,6 +97,25 @@ document.addEventListener("DOMContentLoaded", function () {
     observer.observe(section);
   });
 });
+//about section animations
+document.addEventListener("DOMContentLoaded", function () {
+  const fadeElements = document.querySelectorAll(".fade-in");
+
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.remove("hidden", "opacity-0");
+        }
+      });
+    },
+    { threshold: 0.1 }
+  );
+
+  fadeElements.forEach((el) => {
+    observer.observe(el);
+  });
+});
 // Services section
 document.querySelectorAll(".service-item").forEach((item) => {
   item.addEventListener("mouseenter", (event) => {
@@ -109,7 +128,7 @@ document.querySelectorAll(".service-item").forEach((item) => {
     serviceDescription.classList.add("block");
 
     // Change image
-    document.getElementById("service-image").src = `../images/${image}`;
+    document.getElementById("service-image").src = `src/images/${image}`;
   });
 
   item.addEventListener("mouseleave", (event) => {
@@ -134,7 +153,7 @@ document.querySelectorAll(".work-item").forEach((item) => {
     workDescription.classList.add("block");
 
     // Change image
-    document.getElementById("work-image").src = `../images/${image}`;
+    document.getElementById("work-image").src = `src/images/${image}`;
 
     // Remove 'hovered' class from all items
     workDescription.forEach((item) => item.classList.remove("hovered"));
@@ -178,7 +197,7 @@ document
             </p>
           `;
           // Redirect to thank you page
-          window.location.href = "../pages/thankyou.html";
+          window.location.href = "src/pages/thankyou.html";
         } else {
           formMessages.innerHTML = `
             <p class="text-red-500 font-tickerbit">
@@ -195,3 +214,4 @@ document
         `;
       });
   });
+  
