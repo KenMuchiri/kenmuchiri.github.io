@@ -106,9 +106,9 @@
   </style>
 </head>
 
-<body class="bg-blue-300 text-basecontent p-20">
+<body class="bg-blue-300 text-basecontent p-2 lg:p-20">
   <!-- Navbar -->
-  <header class="navbar bg-blue-100 px-6 py-4 shadow-md items-center justify-between">
+  <header class="navbar bg-blue-100 px-6 py-4 shadow-md items-center w-full justify-between">
     <div class="flex-1">
       <a href="#" class="btn btn-ghost normal-case text-2xl font-bold">Dev Insights</a>
     </div>
@@ -120,13 +120,13 @@
   </header>
 
   <!-- Main Content -->
-  <main class="container mx-auto px-12 py-12">
+  <main class="container text-black mx-auto lg:px-12 lg:py-12">
     <section class="prose lg:prose-xl mx-auto">
-      <h1 class="text-center mb-6 text-4xl font-bold font-switzer">
+      <h1 class="text-center text-black mb-6 text-4xl font-bold font-switzer">
         Understanding JavaScript Closures
       </h1>
 
-      <p>
+      <p class="text-black">
         JavaScript closures are one of those concepts that tend to confuse new
         developers. The idea can seem abstract at first, but once understood,
         closures become one of the most powerful features in JavaScript. In
@@ -134,24 +134,24 @@
         they work with practical examples.
       </p>
 
-      <h2>What is a Closure?</h2>
-      <p>
+      <h2 class="text-black">What is a Closure?</h2>
+      <p class="text-black">
         A <strong>closure</strong> is a function that has access to its own
         scope, the scope of the outer function, and the global scope. This
         means that a closure "remembers" the environment in which it was
         created, even after the outer function has finished executing.
       </p>
 
-      <p>
+      <p class="text-black">
         In simpler terms, a closure allows a function to access variables from
         its parent scope even after that parent function has returned.
       </p>
 
-      <p>Let’s look at a quick example to make this clearer:</p>
+      <p class="text-black">Let’s look at a quick example to make this clearer:</p>
 
       <pre class="container p-8 text-wrap bg-black ml-4 lg:ml-16">
         <button class="copy-btn btn btn-ghost max-w-20 p-0 absolute right-2 z-20 top-1" onclick="copyCode()">Copy Code</button>
-        <div id="notification" class="copy-notification chat-bubble">Copied!</div>
+        <div id="notification" class="text-black copy-notification chat-bubble">Copied!</div>
           <code class="language-js">
         function outerFunction() {
             let outerVariable = "I am from the outer scope!";
@@ -167,38 +167,38 @@
         closureExample(); // Outputs: "I am from the outer scope!"
       </code></pre>
 
-      <p>
+      <p class="text-black">
         Here, <code>innerFunction</code> is a closure because it’s accessing
         <code>outerVariable</code> from its outer function, even though
         <code>outerFunction</code> has already completed execution.
       </p>
 
-      <h2>Why Do We Use Closures?</h2>
-      <p>
+      <h2 class="text-black">Why Do We Use Closures?</h2>
+      <p class="text-black">
         Closures are useful because they allow functions to "remember" the
         environment in which they were created. This makes them extremely
         powerful for a variety of use cases, including:
       </p>
 
-      <ul>
-        <li>
+      <ul class="text-black">
+        <li class="text-black">
           <strong>Data encapsulation:</strong> Variables inside a closure are
           protected from being accessed from the outside. This is great for
           making private variables.
         </li>
-        <li>
+        <li class="text-black">
           <strong>Callback functions:</strong> Closures are often used in
           asynchronous code (like callbacks), where the function needs to
           maintain access to certain variables.
         </li>
-        <li>
+        <li class="text-black">
           <strong>Currying:</strong> Functions can return new functions with
           specific arguments already "locked in" via closures.
         </li>
       </ul>
 
-      <h2>Practical Example of Closures</h2>
-      <p>
+      <h2 class="text-black">Practical Example of Closures</h2>
+      <p class="text-black">
         Let’s see how closures can help us create private variables and
         encapsulate data. Here's a counter function that demonstrates this:
       </p>
@@ -222,7 +222,7 @@
         console.log(counter()); // Outputs: 3
       </code></pre>
 
-      <p>
+      <p class="text-black">
         In this example, the variable <code>count</code> is enclosed within
         the returned function. Even though <code>createCounter</code> has
         finished execution, the returned function still has access to
@@ -230,8 +230,8 @@
         is called.
       </p>
 
-      <h2>Common Pitfalls with Closures</h2>
-      <p>
+      <h2 class="text-black">Common Pitfalls with Closures</h2>
+      <p class="text-black">
         Closures are powerful, but they can also cause issues if not used
         carefully. One common mistake involves misunderstanding how closures
         retain variable references, especially in loops.
@@ -249,7 +249,7 @@
         // After 1 second, this will output: 4, 4, 4
       </code></pre>
 
-      <p>
+      <p class="text-black">
         Here’s the issue: closures capture variable references, not their
         values. By the time the <code>setTimeout</code> function runs, the
         loop has completed, and the value of <code>i</code> is already
@@ -269,8 +269,8 @@
         // After 1 second, this will output: 1, 2, 3
       </code></pre>
 
-      <h2>Conclusion</h2>
-      <p>
+      <h2 class="text-black">Conclusion</h2>
+      <p class="text-black">
         Closures are a fundamental concept in JavaScript that provide
         functions with persistent scope even after their parent function has
         finished executing. While they may seem tricky at first, understanding
@@ -278,7 +278,7 @@
         JavaScript code.
       </p>
 
-      <p>
+      <p class="text-black">
         Whether you're building encapsulated modules, working with callbacks,
         or managing asynchronous code, closures will be a tool you use often
         as a JavaScript developer. Keep experimenting, and soon, closures will
@@ -287,7 +287,7 @@
       <p class="text-sm text-black">If you are interested in learning more about layout techniques in web development, check out my blog post on <a
         class="font-bold uppercase hover:underline"  href="blog3.html">CSS Grid vs Flexbox</a>.
       </p>
-      <p>Check Out How I started from Zero to Hero on My dev Journey <a class="font-bold uppercase hover:underline"
+      <p class="text-black">Check Out How I started from Zero to Hero on My dev Journey <a class="font-bold uppercase hover:underline"
           href="blog1.html">My Dev Journey</a>.
       </p>
 
@@ -297,7 +297,7 @@
 
   <!-- Footer -->
   <footer class="bg-gray-400 py-6 text-center">
-    <p class="font-tickerbit text-xs">Made with ❤ by Ken. &copy; <span id="year"></span> All Rights Reserved.</p>
+    <p class="font-tickerbit text-xs text-black">Made with ❤ by Ken. &copy; <span id="year"></span> All Rights Reserved.</p>
     <div class="flex justify-center space-x-4 mt-4">
       <a href="https://github.com/MuchiriK" class="text-yellow-400 hover:text-white"><i class="fab fa-github"></i></a>
       <a href="https://www.linkedin.com/in/kenneth-muchiri-muongi/" class="text-yellow-400 hover:text-white"><i

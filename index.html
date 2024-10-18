@@ -68,8 +68,8 @@
       <a href="#home" id="home-link" class="text-white hover:text-green-500">Home.</a>
       <a href="src/pages/about.html" id="about-link" class="text-white hover:text-green-500">About.</a>
       <a href="src/pages/services.html" id="services-link" class="text-white hover:text-green-500">Services.</a>
-      <a href="#resume" id="resume-link" class="text-white hover:text-green-500">Resume.</a>
       <a href="src/pages/work.html" id="work-link" class="text-white hover:text-green-500">Work.</a>
+      <a href="src/pages/blog.html" id="blog-link" class="text-white hover:text-green-500">Blog.</a>
       <a href="src/pages/contact.html" id="contact-link" class="text-white hover:text-green-500">Contact.</a>
     </nav>
 
@@ -82,16 +82,16 @@
       </div>
       <ul tabindex="0"
         class="menu menu-sm dropdown-content bg-glass rounded-box z-[1] w-42 p-2 shadow fixed top-8 right-2 align-middle items-start">
-        <li><a href="#home" id="home-link" class="font-tickerbit text-sm text-white hover:text-green-500">Home.</a></li>
-        <li><a href="#about" id="about-link" class="font-tickerbit text-sm text-white hover:text-green-500">About.</a>
+        <li><a href="#" id="home-link" class="font-tickerbit text-sm text-white hover:text-green-500">Home.</a></li>
+        <li><a href="/src/pages/about.html" id="about-link" class="font-tickerbit text-sm text-white hover:text-green-500">About.</a>
         </li>
-        <li><a href="#services" id="services-link"
+        <li><a href="/src/pages/services.html" id="services-link"
             class="font-tickerbit text-sm text-white hover:text-green-500">Services.</a></li>
         <li><a href="#resume" id="resume-link"
             class="font-tickerbit text-sm text-white hover:text-green-500">Resume.</a></li>
-        <li><a href="#work" id="work-link" class="font-tickerbit text-sm text-white hover:text-green-500">Work.</a></li>
-        <li><a href="#blog" id="blog-link" class="font-tickerbit text-sm text-white hover:text-green-500">Blog.</a></li>
-        <li><a href="#contact" id="contact-link"
+        <li><a href="/src/pages/work.html" id="work-link" class="font-tickerbit text-sm text-white hover:text-green-500">Work.</a></li>
+        <li><a href="/src/pages/blog.html" id="blog-link" class="font-tickerbit text-sm text-white hover:text-green-500">Blog.</a></li>
+        <li><a href="/src/pages/contact.html" id="contact-link"
             class="font-tickerbit text-sm text-white hover:text-green-500">Contact.</a></li>
       </ul>
     </div>
@@ -107,10 +107,15 @@
     <!-- Content inside the hero section -->
     <div class="absolute z-20 lg:left-40 sm:left-10 md:left-20 top-1/2 transform -translate-y-1/2 text-left text-white">
       <h1 class="text-8xl md:text-9xl lg:text-12xl font-bold font-switzer">Hello</h1>
-      <h2 class="mt-4 ml-2 text-sm font-teko">_________ this is me being creative</h2>
+      <div class="flex flex-row">
+        <hr class="border-l mt-8 ml-2 w-1/4 border-gray-300 dark:border-gray-700">
+        <h2 class="mt-4 ml-2 text-sm font-teko text-nowrap">
+          this is me being creative
+        </h2>
+      </div>
     </div>
-    <div class="absolute bottom-20 right-2 lg:right-12 p-8 px-4 lg:p-8 justify-end items-end max-w-sm">
-      <h2 class="text-sm tracking-wide font-switzer font-semibold text-wrap uppercase text-right">
+    <div class="absolute bottom-24 right-2 lg:right-12 p-6 px-4 lg:p-8 justify-end items-end max-w-sm box-border">
+      <h2 class="text-xs lg:text-sm tracking-wide font-switzer font-semibold text-wrap uppercase text-right">
         Explore the portfolio of Ken Muchiri, a software developer and graphics designer, specializing in web design
         using
         Tailwind CSS, React, Daisy ui and more.
@@ -138,7 +143,7 @@
   <section id="about" class="relative w-full min-h-screen h-screen bg-black text-white p-10 lg:p-24 mb-10">
     <div class="flex flex-col items-start py-48 lg:px-36 lg:p-20 gap-12">
       <!-- Title -->
-      <h1 class="text-6xl md:text-8xl lg:text-7xl font-bold">MY STORY.</h1>
+      <h1 class="text-6xl md:text-8xl lg:text-7xl font-bold font-switzer">MY STORY.</h1>
       <!-- First Paragraph -->
       <div class="flex justify-start w-full items-center">
         <p class="max-w-md text-left text-lg md:text-2xl lg:text-2xl font-switzer leading-6 uppercase tracking-normal">
@@ -148,8 +153,8 @@
         </p>
       </div>
       <!-- Second Paragraph -->
-      <div class="flex justify-end w-full items-center mt-8 md:mt-10 lg:mt-12 lg:mr-60 tracking-tight">
-        <p class="max-w-md text-lg uppercase">
+      <div class="flex justify-end w-full items-center mt-8 md:mt-10 lg:mt-12 lg:mr-60">
+        <p class="max-w-md text-lg uppercase font-switzer tracking-tight">
           Curiosity drives me forward. Whether it’s a complex project or a new challenge,
           I’m always ready to dive in and bring innovative solutions to the table.
         </p>
@@ -525,11 +530,11 @@
     </div>
   </section>
   <!-- Blog Section -->
-  <section id="blog" class="flex flex-col h-auto py-20 px-10 bg-gray-50">
+  <section id="blog" class="flex flex-col h-full w-full py-20 px-4 lg:px-10 bg-gray-50">
     <div class="container mx-auto px-6">
       <h1 class="font-bold text-black text-xl font-switzer uppercase">
         BLOG:
-        Read Ken Muchiri’s blog for expert tips on web development, software engineering, and design strategies using
+        Read My blog for expert tips on web development, software engineering, and design strategies using
         the latest
         tech.</h1>
       <article class="mb-6 border-b border-gray-700 py-6">

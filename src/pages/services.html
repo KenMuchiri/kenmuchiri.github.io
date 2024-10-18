@@ -63,39 +63,41 @@
 </head>
 
 <body class="bg-black box-border">
-  <header class="fixed flex flex-row z-10 top-0 right-0 left-0 justify-end items-center p-4 bg-transparent box-border">
-    <h1 class="hidden text-md lg:text-3xl md:text-2xl font-bold font-audiowide uppercase text-white">
-      Muchiri.
-    </h1>
-    <div class="dropdown">
+  <header
+    class="fixed flex flex-row z-10 top-0 right-0 left-0 justify-between items-center p-4 bg-transparent box-border">
+    <h1 class="opacity-0 text-lg lg:text-3xl md:text-2xl lg:ml-4 font-bold font-audiowide uppercase">Muchiri.</h1>
+
+    <!-- Navigation links for larger screens -->
+    <nav
+      class="hidden justify-between items-end lg:flex ml-2 mr-4 space-x-4 px-4 uppercase font-tickerbit text-xs lg:text-sm box-border">
+      <a href="/index.html" id="home-link" class="text-white hover:text-green-500">Home.</a>
+      <a href="/src/pages/about.html" id="about-link" class="text-white hover:text-green-500">About.</a>
+      <a href="/src/pages/services.html" id="services-link" class="text-white hover:text-green-500">Services.</a>
+      <a href="/src/pages/work.html" id="work-link" class="text-white hover:text-green-500">Work.</a>
+      <a href="/src/pages/contact.html" id="contact-link" class="text-white hover:text-green-500">Contact.</a>
+    </nav>
+
+    <!-- Dropdown for smaller screens -->
+    <div class="flex lg:hidden dropdown">
       <div tabindex="0" role="button" class="btn btn-ghost btn-circle">
-        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h7" />
         </svg>
       </div>
       <ul tabindex="0"
         class="menu menu-sm dropdown-content bg-glass rounded-box z-[1] w-42 p-2 shadow fixed top-8 right-2 align-middle items-start">
-        <li>
-          <a href="/index.html" id="home-link" class="font-tickerbit text-sm hover:text-green-500 text-white">Home.</a>
+        <li><a href="/index.html" id="home-link" class="font-tickerbit text-sm text-white hover:text-green-500">Home.</a></li>
+        <li><a href="/src/pages/about.html" id="about-link"
+            class="font-tickerbit text-sm text-white hover:text-green-500">About.</a>
         </li>
-        <li>
-          <a href="about.html" id="about-link" class="font-tickerbit text-sm hover:text-green-500 text-white">About.</a>
-        </li>
-        <li>
-          <a href="services.html" id="services-link"
-            class="font-tickerbit text-sm hover:text-green-500 text-white">Services.</a>
-        </li>
-
-        <li>
-          <a href="work.html" id="work-link" class="font-tickerbit text-sm hover:text-green-500 text-white">Work.</a>
-        </li>
-        <li>
-          <a href="blog.html" id="blog-link" class="font-tickerbit text-sm hover:text-green-500 text-white">Blog.</a>
-        </li>
-        <li>
-          <a href="contact.html" id="contact-link"
-            class="font-tickerbit text-sm hover:text-green-500 text-white">Contact.</a>
-        </li>
+        <li><a href="/src/pages/services.html" id="services-link"
+            class="font-tickerbit text-sm text-white hover:text-green-500">Services.</a></li>
+        <li><a href="/src/pages/services.html" id="work-link"
+            class="font-tickerbit text-sm text-white hover:text-green-500">Work.</a></li>
+        <li><a href="/src/pages/work.html" id="blog-link"
+            class="font-tickerbit text-sm text-white hover:text-green-500">Blog.</a></li>
+        <li><a href="/src/pages/contact.html" id="contact-link"
+            class="font-tickerbit text-sm text-white hover:text-green-500">Contact.</a></li>
       </ul>
     </div>
   </header>
@@ -118,7 +120,7 @@
           class="max-w-md lg:ml-8 md:ml-8 text-left text-lg md:text-xl lg:text-xl font-switzer leading-normal uppercase tracking-normal">
           At the core of my Software development expertise lies a commitment to delivering
           exceptional tech solutions that transform ideas into reality.
-      </h1>
+        </h1>
         <br />
         <h2
           class="max-w-md lg:ml-8 md:ml-8 text-left text-lg md:text-xl lg:text-xl font-switzer leading-normal uppercase tracking-normal">
@@ -157,7 +159,8 @@
     </div>
   </section>
   <!-- Services Section -->
-  <section id="services" class="min-h-screen flex items-start justify-between px-4 md:px-20 lg:px-28 py-40 bg-black box-border">
+  <section id="services"
+    class="min-h-screen flex items-start justify-between px-4 md:px-20 lg:px-28 py-40 bg-black box-border">
     <!-- Services List -->
     <div class="w-1/3 sticky top-20 py-16 lg:px-20">
       <h2 class="text-md font-bold mb-4 tracking-wide text-white font-tickerbit hidden md:block lg:block">

@@ -57,53 +57,44 @@
     <h1 class="text-md lg:text-3xl md:text-2xl font-bold font-audiowide uppercase text-black">
       Muchiri.
     </h1>
-    <div class="dropdown">
+    <!-- Dropdown for smaller screens -->
+    <div class="flex dropdown">
       <div tabindex="0" role="button" class="btn btn-ghost btn-circle">
-        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h7" />
         </svg>
       </div>
       <ul tabindex="0"
         class="menu menu-sm dropdown-content bg-glass rounded-box z-[1] w-42 p-2 shadow fixed top-8 right-2 align-middle items-start">
-        <li>
-          <a href="/index.html" id="home-link"
-            class="font-tickerbit text-sm hover:text-yellow-500 text-green-500">Home.</a>
+        <li><a href="/index.html" id="home-link"
+            class="font-tickerbit text-sm text-green-500 hover:text-yellow-400">Home.</a>
         </li>
-        <li>
-          <a href="about.html" id="about-link"
-            class="font-tickerbit text-sm hover:text-yellow-500 text-green-500">About.</a>
+        <li><a href="/src/pages/about.html" id="about-link"
+            class="font-tickerbit text-sm text-green-500 hover:text-yellow-400">About.</a>
         </li>
-        <li>
-          <a href="services.html" id="services-link"
-            class="font-tickerbit text-sm hover:text-yellow-500 text-green-500">Services.</a>
+        <li><a href="/src/pages/services.html" id="services-link"
+            class="font-tickerbit text-sm text-green-500 hover:text-yellow-400">Services.</a></li>
+        <li><a href="/src/pages/portforlio.html" id="resume-link"
+            class="font-tickerbit text-sm text-green-500 hover:text-yellow-400">Portfolio.</a>
         </li>
-
-        <li>
-          <a href="work.html" id="work-link"
-            class="font-tickerbit text-sm hover:text-yellow-500 text-green-500">Work.</a>
-        </li>
-        <li>
-          <a href="blog.html" id="blog-link"
-            class="font-tickerbit text-sm hover:text-yellow-500 text-green-500">Blog.</a>
-        </li>
-        <li>
-          <a href="contact.html" id="contact-link"
-            class="font-tickerbit text-sm hover:text-yellow-500 text-green-500">Contact.</a>
-        </li>
+        <li><a href="/src/pages/services.html" id="work-link"
+            class="font-tickerbit text-sm text-green-500 hover:text-yellow-400">Work.</a></li>
+        <li><a href="/src/pages/contact.html" id="contact-link"
+            class="font-tickerbit text-sm text-green-500 hover:text-yellow-400">Contact.</a></li>
       </ul>
     </div>
   </header>
   <!-- Blog Section -->
-  <section id="blog" class="flex flex-col h-auto py-20 px-10 bg-gray-50">
+  <section id="blog" class="flex flex-col h-auto py-20 px-4 lg:px-10 bg-gray-50">
     <div class="container mx-auto px-6">
       <h1 class="font-bold text-xl font-switzer uppercase">
         Read My blogs for expert tips on web development, software engineering, and design strategies using the latest
         tech.</h1>
       <article class="mb-6 border-b border-gray-700 py-6">
-        <h2 class="text-xl font-teko py-2">
+        <h2 class="text-xl font-teko py-2 font-bold">
           My Journey into Software Development
         </h2>
-        <p class="text-gray-400 py-2">
+        <p class="text-gray-500 py-2">
           Software development wasn’t always in my plans. In fact, like many,
           I stumbled into it rather unexpectedly. Looking back now, I realize
           that the path to becoming a developer was full of challenges,
@@ -113,10 +104,10 @@
         <a href="../pages/blogs/blog1.html" class="text-yellow-400 hover:text-gray-500">Read more</a>
       </article>
       <article class="mb-6 border-b border-gray-700 py-6">
-        <h3 class="text-xl font-teko py-2">
+        <h3 class="text-xl font-teko py-2 font-bold">
           Understanding JavaScript Closures
         </h3>
-        <p class="text-gray-400 py-2">
+        <p class="text-gray-500 py-2">
           JavaScript closures are one of those concepts that tend to confuse
           new developers. The idea can seem abstract at first, but once
           understood, closures become one of the most powerful features in
@@ -126,8 +117,8 @@
         <a href="../pages/blogs/blog2.html" class="text-yellow-400 hover:text-gray-500">Read more</a>
       </article>
       <article class="py-6">
-        <h3 class="text-xl font-teko py-2">CSS Grid vs. Flexbox</h3>
-        <p class="text-gray-400 py-2">
+        <h3 class="text-xl font-teko py-2 font-bold">CSS Grid vs. Flexbox</h3>
+        <p class="text-gray-500 py-2">
           When it comes to modern web layout techniques, two of the most
           commonly used systems are <strong>CSS Grid</strong> and
           <strong>Flexbox</strong>. While both offer powerful ways to create
