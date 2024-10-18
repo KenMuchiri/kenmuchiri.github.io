@@ -19,7 +19,7 @@
   <link href="https://fonts.googleapis.com/css2?family=New+Amsterdam&display=swap" rel="stylesheet" />
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet" />
   <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
-  <link rel="icon" href="src/images/Curiosity.jpeg" />
+  <link rel="icon" href="/src/images/Curiosity.jpeg" />
   <link href="../output.css" rel="stylesheet" />
   <link href="../input.css" rel="stylesheet" />
   <!-- prism -->
@@ -66,43 +66,49 @@
     .font-amsterdam {
       font-family: "New Amsterdam", sans-serif;
     }
+
     pre {
-        background-color: #f5f5f5;
-        padding: 15px;
-        border-radius: 5px;
-        position: relative;
-        overflow-x: auto;
-      }
-      code {
-        font-family: "Courier New", monospace;
-        color: #d63384;
-      }
-      .copy-btn {
-        color: black;
-        border: none;
-        padding: 5px 10px;
-        border-radius: 5px;
-        cursor: pointer;
-      }
-      .copy-btn:hover {
-        background-color: #0056b3;
-      }
-      /* Notification styling */
-      .copy-notification {
-        position: absolute;
-        top: 1px;
-        left: 10px;
-        background-color: #28a745;
-        color: white;
-        padding: 5px 10px;
-        border-radius: 5px;
-        font-size: 0.9rem;
-        opacity: 0;
-        transition: opacity 0.3s ease;
-      }
-      .show {
-        opacity: 1;
-      }
+      background-color: #f5f5f5;
+      padding: 15px;
+      border-radius: 5px;
+      position: relative;
+      overflow-x: auto;
+    }
+
+    code {
+      font-family: "Courier New", monospace;
+      color: #d63384;
+    }
+
+    .copy-btn {
+      color: black;
+      border: none;
+      padding: 5px 10px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .copy-btn:hover {
+      background-color: #0056b3;
+    }
+
+    /* Notification styling */
+    .copy-notification {
+      position: absolute;
+      top: 1px;
+      left: 10px;
+      background-color: #28a745;
+      color: white;
+      padding: 5px 10px;
+      border-radius: 5px;
+      font-size: 0.9rem;
+      opacity: 0;
+      transition: opacity 0.3s ease;
+    }
+
+    .show {
+      opacity: 1;
+    }
   </style>
 </head>
 
@@ -135,6 +141,9 @@
         differences, and help you decide which one to use depending on your
         needs.
       </p>
+      <p class="text-black p-8">Check out my <a class="font-bold uppercase hover:underline" href="/src/pages/work.html">Projects</a> page to see some of my projects that utilize CSS Grid and Flexbox
+        techniques.</p>
+
 
       <h2 class="text-black text-start font-bold px-8 uppercase">Understanding CSS Grid</h2>
       <p class="text-black p-8">
@@ -350,14 +359,23 @@
         requirements of your design. And in many cases, combining both can
         give you the best of both worlds.
       </p>
+      <p class="p-8 text-black">If you are interested in learning more about Javascript Closures in web development, check
+        out my blog post on <a class="font-bold hover:underline uppercase" href="blog2.html">JavaScript Closures</a>.
+      </p>
+      <p class="p-8 text-black">Check Out How I started from Zero to Hero on My dev Journey <a class="font-bold hover:underline uppercase" href="blog1.html">My Dev
+          Journey</a>.
+      </p>
     </section>
   </main>
 
   <!-- Footer -->
-  <footer class="bg-base-200 py-6 text-center">
-    <p class="text-sm text-base-content">
-      © 2024 Web Dev Simplified - All Rights Reserved.
-    </p>
+  <footer class="bg-gray-400 py-6 text-center">
+    <p class="font-tickerbit text-xs">Made with ❤ by Ken. &copy; <span id="year"></span> All Rights Reserved.</p>
+    <div class="flex justify-center space-x-4 mt-4">
+      <a href="https://github.com/MuchiriK" class="text-yellow-400 hover:text-white"><i class="fab fa-github"></i></a>
+      <a href="https://www.linkedin.com/in/kenneth-muchiri-muongi/" class="text-yellow-400 hover:text-white"><i
+          class="fab fa-linkedin"></i></a>
+    </div>
   </footer>
   <script>
     function copyCode() {
@@ -379,6 +397,7 @@
       });
     }
   </script>
+  <script src="/src/scrpits/script.js"></script>
 
 </body>
 
