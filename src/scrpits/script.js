@@ -290,7 +290,7 @@ document
             </p>
           `;
           // Redirect to thank you page
-          window.location.href = "src/pages/thankyou.html";
+          window.location.href = "../pages/thankyou.html";
         } else {
           formMessages.innerHTML = `
             <p class="text-red-500 font-tickerbit">
