@@ -1,0 +1,195 @@
+.photo-block {
+  position: sticky;
+  top: calc(50% - 30vh);
+  height: 60vh;
+  width: 100%;
+  display: grid;
+  overflow: hidden;
+  background: var(--gray-6);
+}
+
+.photo-grid {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(38deg);
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+}
+
+.photo {
+  aspect-ratio: 3 / 4;
+  width: 20vmax;
+}
+
+.collage {
+  height: 200vh;
+  view-timeline: --collage;
+  padding: 20px;
+}
+
+.photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.photo:nth-of-type(7n + 1):nth-of-type(even),
+.photo:nth-of-type(7n + 3):nth-of-type(even),
+.photo:nth-of-type(7n + 5):nth-of-type(even),
+.photo:nth-of-type(7n + 7):nth-of-type(even) {
+  --vertical: -100%;
+  --horizontal: 100%;
+}
+
+.photo:nth-of-type(7n + 1):nth-of-type(odd),
+.photo:nth-of-type(7n + 3):nth-of-type(odd),
+.photo:nth-of-type(7n + 5):nth-of-type(odd),
+.photo:nth-of-type(7n + 7):nth-of-type(odd) {
+  --vertical: -100%;
+  --horizontal: -100%;
+}
+
+.photo:nth-of-type(7n + 2):nth-of-type(even),
+.photo:nth-of-type(7n + 4):nth-of-type(even),
+.photo:nth-of-type(7n + 6):nth-of-type(even) {
+  --vertical: 100%;
+  --horizontal: -100%;
+}
+
+.photo:nth-of-type(7n + 2):nth-of-type(odd),
+.photo:nth-of-type(7n + 4):nth-of-type(odd),
+.photo:nth-of-type(7n + 6):nth-of-type(odd) {
+  --vertical: 100%;
+  --horizontal: 100%;
+}
+
+.photo {
+  animation-name: travel;
+  animation-fill-mode: both;
+  animation-timing-function: linear;
+  animation-timeline: --collage;
+  animation-range: entry 100% exit 0%;
+}
+
+@keyframes travel {
+  0% {
+    translate: 0 0;
+  }
+
+  50% {
+    translate: 0 var(--vertical);
+  }
+
+  100% {
+    translate: var(--horizontal) var(--vertical);
+  }
+}
+
+/* Debugging ViewTimeline Indicator */
+.indicators {
+  /* Can't pass the timeline-name via custom property */
+  position: fixed;
+  width: 16vw;
+  left: 8vw;
+  display: grid;
+  opacity: 0;
+  top: 50%;
+  gap: 2rem;
+  transform: translate(0, -50%);
+  justify-items: center;
+}
+
+.indicators:hover {
+  opacity: 1;
+}
+
+
+/* for the services page scroll section */
+/* Container */
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* Header */
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #333;
+  color: #fff;
+  padding: 1em;
+  z-index: 1000;
+}
+
+/* Main Content */
+.main-content {
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+  margin-top: 60px;
+  /* Adjust to match header height */
+}
+
+/* Sidebar */
+.sidebar {
+  position: sticky;
+  top: 60px;
+  /* Adjust to match header height */
+  width: 200px;
+  background-color: #f4f4f4;
+  padding: 1em;
+  overflow-y: auto;
+  height: calc(100vh - 60px);
+  /* Adjust to match header height */
+}
+
+.service-item {
+  padding: 0.5em 0;
+  cursor: pointer;
+}
+
+.service-item.active {
+  color: #007bff;
+}
+
+/* Descriptions */
+.descriptions {
+  flex: 1;
+  padding: 1em;
+  overflow-y: auto;
+  height: calc(100vh - 60px);
+  /* Adjust to match header height */
+}
+
+.description-section {
+  margin-bottom: 2em;
+}
+/* Default visibility for small and medium screens */
+.work-section-desktop {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  /* Medium screen and larger */
+  .work-section-mobile {
+    display: block;
+  }
+  .work-section-desktop {
+    display: none;
+  }
+}
+
+@media (min-width: 1024px) {
+  /* Large screens */
+  .work-section-mobile {
+    display: none;
+  }
+
+  .work-section-desktop {
+    display: block;
+  }
+}

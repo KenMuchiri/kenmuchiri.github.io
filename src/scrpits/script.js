@@ -1,74 +1,166 @@
+// change project title on work page
+document.querySelectorAll(".work-item").forEach((item) => {
+  item.addEventListener("mouseenter", function () {
+    const projectTitle = document.getElementById("project-title");
+    projectTitle.textContent = this.getAttribute("data-title"); // Set project title from data attribute
+  });
+
+  // Optional: Reset title when mouse leaves the item
+  item.addEventListener("mouseleave", function () {
+    const projectTitle = document.getElementById("project-title");
+    projectTitle.textContent = "[Project Title]"; // Reset or leave blank
+  });
+});
+
+// scroll opacity effect for the work page
+const workDesc = document.querySelectorAll(".work-item");
+
+window.addEventListener("scroll", () => {
+  let scrollPos = window.scrollY + window.innerHeight / 2; // Middle of the viewport
+
+  workDesc.forEach((description, index) => {
+    const rect = description.getBoundingClientRect();
+
+    // Apply opacity change for items toward the bottom of the viewport
+    if (rect.top > window.innerHeight * 0.75) {
+      const fadeFactor =
+        (window.innerHeight - rect.top) / (window.innerHeight * 0.5);
+      workDesc.style.opacity = Math.max(fadeFactor, 0.1);
+    } else {
+      workDesc.style.opacity = "100";
+    }
+  });
+});
+
+// Scroll effect for the service page
+const services = document.querySelectorAll(".service-item");
+const descriptions = document.querySelectorAll(".service-description");
+
+window.addEventListener("scroll", () => {
+  let scrollPos = window.scrollY + window.innerHeight / 2; // Middle of the viewport
+
+  descriptions.forEach((description, index) => {
+    const serviceItem = services[index];
+    const rect = description.getBoundingClientRect();
+
+    // Highlight the service item when it's in the center of the viewport
+    if (
+      rect.top <= window.innerHeight / 2 &&
+      rect.bottom >= window.innerHeight / 2
+    ) {
+      serviceItem.classList.add("text-white", "font-bold", "opacity-100");
+      description.classList.remove("hidden");
+    } else {
+      serviceItem.classList.remove("text-white", "font-bold", "opacity-100");
+      description.classList.add("block");
+    }
+
+    // Apply opacity change for items toward the bottom of the viewport
+    if (rect.top > window.innerHeight * 0.75) {
+      const fadeFactor =
+        (window.innerHeight - rect.top) / (window.innerHeight * 0.5);
+      description.style.opacity = Math.max(fadeFactor, 0.1);
+    } else {
+      description.style.opacity = "100";
+    }
+  });
+});
+
+// Scroll effect for the about page
+// JavaScript to trigger opacity change on scroll
+const scrollTriggerElements = document.querySelectorAll(".scroll-trigger");
+
+const observer = new IntersectionObserver(
+  (entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("opacity-100");
+        entry.target.classList.remove("opacity-0");
+      }
+    });
+  },
+  { threshold: 0.1 } // Adjust this to control how much of the element must be visible
+);
+
+scrollTriggerElements.forEach((el) => observer.observe(el));
+
 // Get the current year
 const currentYear = new Date().getFullYear();
 // Set the year in the span with id="year"
 document.getElementById("year").textContent = currentYear;
 
 // JavaScript for displaying live time
-    function updateClock() {
-      const clockElement = document.getElementById('clock');
-      const now = new Date();
-      const hours = now.getHours().toString().padStart(2, '0');
-      const minutes = now.getMinutes().toString().padStart(2, '0');
-      const seconds = now.getSeconds().toString().padStart(2, '0');
-      const milliseconds = now.getMilliseconds().toString().padStart(2, '0');
-      clockElement.textContent = `${hours}:${minutes}:${seconds}:${milliseconds}`;
-    }
+function updateClock() {
+  const clockElement = document.getElementById("clock");
+  const now = new Date();
+  const hours = now.getHours().toString().padStart(2, "0");
+  const minutes = now.getMinutes().toString().padStart(2, "0");
+  const seconds = now.getSeconds().toString().padStart(2, "0");
+  clockElement.textContent = `${hours}:${minutes}:${seconds}`;
+}
 
-    // Update the clock every second
-    setInterval(updateClock, 1000);
-    updateClock(); // Initial call
+// Update the clock every second
+setInterval(updateClock, 1000);
+updateClock(); // Initial call
 
-     // OpenWeatherMap API key
-    const apiKey = "21c8cebe607ea06ab61ff9523dbc97b9";
+// OpenWeatherMap API key
+const apiKey = "21c8cebe607ea06ab61ff9523dbc97b9";
 
-    // Geolocation API to get user location
-    function getLocation() {
-      if (navigator.geolocation) {
-        navigator.geolocation.getCurrentPosition(showPosition, showError);
-      } else {
-        document.getElementById('location').textContent = "[Geolocation not supported]";
-      }
-    }
+// Geolocation API to get user location
+function getLocation() {
+  if (navigator.geolocation) {
+    navigator.geolocation.getCurrentPosition(showPosition, showError);
+  } else {
+    document.getElementById("location").textContent =
+      "[Geolocation not supported]";
+  }
+}
 
-    // Function to display location
-    function showPosition(position) {
-      const latitude = position.coords.latitude;
-      const longitude = position.coords.longitude;
+// Function to display location
+function showPosition(position) {
+  const latitude = position.coords.latitude;
+  const longitude = position.coords.longitude;
 
-      // Fetch city name using OpenWeatherMap reverse geocoding API
-      fetch(`https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=${apiKey}`)
-        .then(response => response.json())
-        .then(data => {
-          const city = data.name || 'Unknown Location';
-          document.getElementById('location').textContent = `[${city}]`;
-        })
-        .catch(error => {
-          document.getElementById('location').textContent = "[Location unavailable]";
-        });
-    }
+  // Fetch city name using OpenWeatherMap reverse geocoding API
+  fetch(
+    `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=${apiKey}`
+  )
+    .then((response) => response.json())
+    .then((data) => {
+      const city = data.name || "Unknown Location";
+      document.getElementById("location").textContent = `${city}`;
+    })
+    .catch((error) => {
+      document.getElementById("location").textContent =
+        "[Location unavailable]";
+    });
+}
 
-    // Handle geolocation errors
-    function showError(error) {
-      switch(error.code) {
-        case error.PERMISSION_DENIED:
-          document.getElementById('location').textContent = "[Location permission denied]";
-          break;
-        case error.POSITION_UNAVAILABLE:
-          document.getElementById('location').textContent = "[Location unavailable]";
-          break;
-        case error.TIMEOUT:
-          document.getElementById('location').textContent = "[Location request timeout]";
-          break;
-        case error.UNKNOWN_ERROR:
-          document.getElementById('location').textContent = "[Unknown error]";
-          break;
-      }
-    }
+// Handle geolocation errors
+function showError(error) {
+  switch (error.code) {
+    case error.PERMISSION_DENIED:
+      document.getElementById("location").textContent =
+        "[Location permission denied]";
+      break;
+    case error.POSITION_UNAVAILABLE:
+      document.getElementById("location").textContent =
+        "[Location unavailable]";
+      break;
+    case error.TIMEOUT:
+      document.getElementById("location").textContent =
+        "[Location request timeout]";
+      break;
+    case error.UNKNOWN_ERROR:
+      document.getElementById("location").textContent = "[Unknown error]";
+      break;
+  }
+}
 
-    // Call the function to get location
-    getLocation();
+// Call the function to get location
+getLocation();
 
-// section
+// section nav
 document.addEventListener("DOMContentLoaded", function () {
   const sections = document.querySelectorAll("section");
   const navLinks = document.querySelectorAll("nav a");
@@ -141,7 +233,7 @@ document.querySelectorAll(".service-item").forEach((item) => {
     serviceDescription.classList.add("hidden");
   });
 });
-
+// Work Section
 document.querySelectorAll(".work-item").forEach((item) => {
   item.addEventListener("mouseover", (event) => {
     const work = event.target;
@@ -172,6 +264,7 @@ document.querySelectorAll(".work-item").forEach((item) => {
     item.classList.remove("hovered");
   });
 });
+
 // Form Submission
 document
   .getElementById("contact-form")
@@ -214,4 +307,3 @@ document
         `;
       });
   });
-  

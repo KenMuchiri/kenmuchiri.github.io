@@ -3,6 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ken Muchiri - Ranked Best Software Developer and Web Developer in Kenya 2024 | About</title>
+    <meta name="description"
+      content="Ken Muchiri is One of the best Software developers in Kenya today. He a software developer at Safaricom">
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -11,6 +14,10 @@
     />
     <link
       href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap"
       rel="stylesheet"
     />
     <link
@@ -33,8 +40,8 @@
     <link rel="stylesheet" href="" />
     <link rel="icon" href="../images/advice.jfif" />
     <link href="../output.css" rel="stylesheet" />
-    <link href="../input.css" rel="stylesheet" />
-    <title>Muchiri | About Me</title>
+    <link href="../style.css" rel="stylesheet" />
+    <title>About Muchiri</title>
     <style>
       /* Custom fonts */
       .font-prime {
@@ -56,14 +63,22 @@
       .font-amsterdam {
         font-family: "New Amsterdam", sans-serif;
       }
+      /* // <uniquifier>: Use a unique and descriptive class name
+      // <weight>: Use a value from 200 to 700 */
+      .font-oswald {
+        font-family: "Oswald", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 700;
+        font-style: normal;
+      }
     </style>
   </head>
-  <body>
+  <body class="bg-black box-border">
     <header
-      class="fixed flex flex-row z-10 top-0 right-0 left-0 justify-between items-center p-4 bg-transparent box-border"
+      class="fixed flex flex-row z-10 top-0 right-0 left-0 justify-end items-center p-4 bg-transparent box-border"
     >
       <h1
-        class="text-md lg:text-3xl md:text-2xl font-bold font-audiowide uppercase text-white"
+        class="hidden text-md lg:text-3xl md:text-2xl font-bold font-audiowide uppercase text-white"
       >
         Muchiri.
       </h1>
@@ -90,57 +105,50 @@
         >
           <li>
             <a
-              href="#home"
+              href="/index.html"
               id="home-link"
-              class="font-tickerbit text-sm hover:text-yellow-500 text-green-400"
+              class="font-tickerbit text-sm hover:text-green-500 text-white"
               >Home.</a
             >
           </li>
           <li>
             <a
-              href="#about"
+              href="about.html"
               id="about-link"
-              class="font-tickerbit text-sm hover:text-yellow-500 text-green-400"
+              class="font-tickerbit text-sm hover:text-green-500 text-white"
               >About.</a
             >
           </li>
           <li>
             <a
-              href="#services"
+              href="services.html"
               id="services-link"
-              class="font-tickerbit text-sm hover:text-yellow-500 text-green-400"
+              class="font-tickerbit text-sm hover:text-green-500 text-white"
               >Services.</a
             >
           </li>
+         
           <li>
             <a
-              href="#resume"
-              id="resume-link"
-              class="font-tickerbit text-sm hover:text-yellow-500 text-green-400"
-              >Resume.</a
-            >
-          </li>
-          <li>
-            <a
-              href="#work"
+              href="work.html"
               id="work-link"
-              class="font-tickerbit text-sm hover:text-yellow-500 text-green-400"
+              class="font-tickerbit text-sm hover:text-green-500 text-white"
               >Work.</a
             >
           </li>
           <li>
             <a
-              href="#blog"
+              href="blog.html"
               id="blog-link"
-              class="font-tickerbit text-sm hover:text-yellow-500 text-green-400"
+              class="font-tickerbit text-sm hover:text-green-500 text-white"
               >Blog.</a
             >
           </li>
           <li>
             <a
-              href="#contact"
+              href="contact.html"
               id="contact-link"
-              class="font-tickerbit text-sm hover:text-yellow-500 text-green-400"
+              class="font-tickerbit text-sm hover:text-green-500 text-white"
               >Contact.</a
             >
           </li>
@@ -148,53 +156,381 @@
       </div>
     </header>
     <!-- Hero -->
-    <section
-      class="hero relative h-screen flex flex-col justify-center items-center bg-cover bg-center box-border"
-      style="background-image: url('../images/pexels-danbuilds-633409.jpg')"
-    >
-      <div
-        class="absolute top-8 left-0 z-[2] text-3xl text-green-400 font-tickerbit p-8"
+    <section id="about" class="relative w-full min-h-screen h-full text-white p-8 box-border"
       >
-        What Defines me.
-        <p class="text-white font-tickerbit text-sm">1.Consistency</p>
-        <p class="text-white font-tickerbit text-sm">2.Consistency</p>
-        <p class="text-white font-tickerbit text-sm">3.Consistency</p>
-        <p class="text-white font-tickerbit text-sm">4.Consistency</p>
-        <p class="text-white font-tickerbit text-sm">5.Consistency</p>
-        <p class="text-white font-tickerbit text-sm">6.Consistency</p>
+        <div class="flex flex-col items-start py-12 md:py-24 lg:py-24 lg:pr-48 lg:p-20 gap-12">
+          <video autoplay loop muted playsinline class="absolute top-0 left-0 w-full h-full object-cover">
+            <source src="../images/walk-on-stars.mp4" type="video/mp4">
+            <!-- Fallback content for browsers that don't support video -->
+            Your browser does not support the video tag.
+          </video>
+          <!-- Title -->
+          <h1 class="relative lg:ml-8 md:ml-8 text-6xl md:text-8xl lg:text-7xl font-audiowide">MUCHIRI.</h1>
+
+          <!-- First Paragraph -->
+           <div class="flex relative justify-start items-center">
+              <p class="max-w-md lg:ml-8 md:ml-8 text-left text-lg md:text-xl lg:text-xl font-switzer leading-normal uppercase tracking-normal">
+                  Welcome to my space where I share my work, insights, and passions.
+              </p>
+          </div>
+          
+            
+          <!-- Second Paragraph -->
+          <div class="flex flex-col md:flex-row lg:flex-row relative justify-end w-full gap-12 p-8 px-8 items-top ml-6 lg:ml-14 md:mt-10 lg:mt-8 tracking-normal">
+              <p class="max-w-md mb-8 text-justify text-white text-sm md:text-md lg:text-[16px] font-teko leading-6 uppercase tracking-normal">
+                I am based in Nairobi, Kenya. I enjoy exploring<br>
+                the limitless potential of technology, 
+                from<br>
+                building user-friendly applications to<br>
+                crafting visually engaging designs.
+              </p>
+              <p class="max-w-md text-justify text-white text-sm md:text-md lg:text-[16px] font-switzer leading-6 uppercase tracking-wide">
+                As much as I enjoy the precision of coding,<br>
+                I also thrive on creativity. 
+                Blending<br> 
+                my technical knowledge with a love for<br> design, 
+                I aim to create solutions that are<br>
+                as beautiful as they are functional. 
+                To me,<br> 
+                art and tech are two sides of 
+                the same<br> 
+                coin. 
+                I enjoy breaking down complex<br> 
+                challenges 
+                into manageable tasks<br> 
+                and finding 
+                innovative ways to tackle them.<br>
+                This mindset helps me both in coding and <br>
+                everyday life.
+              </p>
+          </div>
+          <div class="fixed bottom-4 left-0 text-left px-4 py-4 gap-2 space-y-1 z-900 sm:text-xs md:fixed lg:fixed xl:block">
+            <!-- Contact Us Link -->
+            <a href="src/pages/contact.html" class="text-white text-xs uppercase font-tickerbit hover:underline inline-flex items-start">
+            Contact Me
+            <span class="ml-4 bg-transparent text-xs font-tickerbit">↗</span>
+            </a>
+
+            <!-- Clock Section -->
+            <div id="clock" class="items-start justify-start font-tickerbit text-xs lg:text-sm"></div>
+
+            <!-- Location Section -->
+            <div id="location" class="text-xs font-tickerbit uppercase align-top items-center">[Fetching location <span class="loading loading-ring loading-sm items-center"></span>]</div>
+        </div>
+    
+          
+        </div>
+    </section>
+    <section class="relative w-full h-full bg-black bg-cover p-12 gap-8 box-border">
+      <div class="text-white flex flex-col md:flex-row lg:flex-row relative box-border">
+        <div class="flex relative lg:sticky lg:top-36 flex-col gap-8 py-8 md:p-8 lg:p-8">
+          <h1 class="font-switzer text-left text-4xl lg:text-6xl font-bold uppercase lg:text-nowrap">Behind The Code.</h1>
+          <p class="font-switzer text-lg lg:text-xl text-nowrap">Ready to see your ideas take shape?</p>
+          <!-- Call to Action -->
+          <div class="flex relative justify-start">
+              <a href="contact.html">
+                  <button class="btn btn-outline text-white border-white hover:bg-white hover:text-black">
+                  Get in Touch →
+                  </button>
+              </a>
+          </div>
+        </div>
+        <div class="flex relative box-border flex-col mt-24 md:mt-40 lg:mt-11 ml-2 md:ml-2 lg:ml-8 scroll-smooth overflow-y-auto">
+          <div class="flex flex-col gap-6 mt-24 opacity-0 transition-opacity duration-500 scroll-trigger">
+            <h2 class="font-tickerbit text-left font-bold text-sm lg:text-xs text-nowrap uppercase">
+              [01.] &nbspCrack the Code
+            </h2>
+            <p class="max-w-md font-tickerbit text-xs items-center justify-center ml-16 md:ml-12 lg:ml-16">
+              From building sleek websites to creating complex web applications, 
+              I thrive on solving problems through code. 
+              I’ve always believed that technology, 
+              when used right, can transform the world—and 
+              I love being part of that change.
+            </p>
+
+          </div>
+          <div class="flex relative flex-col gap-6 mt-24 opacity-0 transition-opacity duration-500 scroll-trigger">
+            <h2 class="font-tickerbit text-left font-bold text-sm lg:text-xs text-nowrap uppercase">
+              [02.] &nbspClient-Approved
+            </h2>
+            <p class="max-w-md font-tickerbit text-xs items-center justify-center ml-16 md:ml-12 lg:ml-16">
+              From startups to big brands, I’ve worked with 
+              top-level clients to bring their ideas to life, 
+              tailoring every solution to fit their vision.
+              Each project brings its own set of challenges, 
+              but my focus is always on delivering tailor-made 
+              solutions that meet their specific goals.
+            </p>
+          </div>
+          <div class="flex relative flex-col gap-6 mt-24 opacity-0 transition-opacity duration-500 scroll-trigger">
+            <h2 class="font-tickerbit text-left font-bold text-sm lg:text-xs text-nowrap uppercase">
+              [03.] &nbspDesign for the Win
+            </h2>
+            <p class="max-w-md font-tickerbit text-xs items-center justify-center ml-16 md:ml-12 lg:ml-16">
+              Whether it’s a website or an app interface, 
+              design plays a critical role in user experience. 
+              My approach is simple: design with the user in mind. 
+              I work closely with clients to ensure that their vision 
+              is captured through purposeful, user-centered designs.
+            </p>
+          </div>
+          <div class="flex relative flex-col gap-6 mt-24 opacity-0 transition-opacity duration-500 scroll-trigger">
+            <h2 class="font-tickerbit text-left font-bold text-sm lg:text-xs text-nowrap uppercase">
+              [04.] &nbspBuilding For The Future
+            </h2>
+            <p class="max-w-md font-tickerbit text-xs items-center justify-center ml-16 md:ml-12 lg:ml-16">
+              Technology is constantly evolving, and I love being part of that evolution. 
+              My work is focused not only on delivering what clients need today but also 
+              on preparing them for the future. Every line of code I write is designed to 
+              be scalable and adaptable for tomorrow's challenges.
+            </p>
+          </div>
+          <div class="flex relative flex-col gap-6 mt-24 opacity-0 transition-opacity duration-500 scroll-trigger">
+            <h2 class="font-tickerbit text-left font-bold text-sm lg:text-xs text-nowrap uppercase">
+              [05.] &nbspTailored Tech
+            </h2>
+            <p class="max-w-md font-tickerbit text-xs items-center justify-center ml-16 md:ml-12 lg:ml-16">
+              Every project is different, 
+              and I love shaping code to fit my clients’ 
+              unique needs, from sleek websites to complex systems.
+            </p>
+          </div>
+          <div class="flex relative flex-col gap-6 mt-24 opacity-0 transition-opacity duration-500 scroll-trigger">
+            <h2 class="font-tickerbit text-left font-bold text-sm lg:text-xs text-nowrap uppercase">
+              [06.] &nbspIndustry Leaders
+            </h2>
+            <p class="max-w-md font-tickerbit text-xs items-center justify-center ml-16 md:ml-12 lg:ml-16">
+              My journey has taken me across industries, working with clients ranging from tech innovators
+              to established brands looking to refresh their digital presence. These collaborations have 
+              challenged me to push boundaries and ensure that my work meets the highest standards.
+            </p>
+          </div>
+          <div class="flex relative flex-col gap-6 mt-24 opacity-0 transition-opacity duration-500 scroll-trigger">
+            <h2 class="font-tickerbit text-left font-bold text-sm lg:text-xs text-nowrap uppercase">
+              [07.] &nbspUser, Meet Experience
+            </h2>
+            <p class="max-w-md font-tickerbit text-xs items-center justify-center ml-16 md:ml-12 lg:ml-16">
+              Creating seamless user experiences is my specialty. 
+              My goal? Make sure your users love every click, tap, and swipe.
+            </p>
+          </div>
+          <div class="flex relative flex-col gap-6 mt-24 opacity-0 transition-opacity duration-500 scroll-trigger">
+            <h2 class="font-tickerbit text-left font-bold text-sm lg:text-xs text-nowrap uppercase">
+              [08.] &nbspA Creative Touch
+            </h2>
+            <p class="max-w-md font-tickerbit text-xs items-center justify-center ml-16 md:ml-12 lg:ml-16">
+              Even the most technical projects need a creative spark. I infuse creativity into everything I do, 
+              ensuring that even the most complex solutions are easy to use and aesthetically pleasing. 
+              This has been a key factor in my success with top-level clients.
+            </p>
+          </div>
+          <div class="flex relative flex-col gap-6 mt-24 opacity-0 transition-opacity duration-500 scroll-trigger">
+            <h2 class="font-tickerbit text-left font-bold text-sm lg:text-xs text-nowrap uppercase">
+              [09.] &nbspIn Code We Trust
+            </h2>
+            <p class="max-w-md font-tickerbit text-xs items-center justify-center ml-16 md:ml-12 lg:ml-16">
+              I stay ahead of the curve by constantly learning and innovating. 
+              My clients trust me to bring the latest tech to their projects.
+            </p>
+          </div>
+          <div class="flex relative flex-col gap-6 mt-24 opacity-0 transition-opacity duration-500 scroll-trigger">
+            <h2 class="font-tickerbit text-left font-bold text-sm lg:text-xs text-nowrap uppercase">
+              [10.] &nbspDriven By Innovation
+            </h2>
+            <p class="max-w-md font-tickerbit text-xs items-center justify-center ml-16 md:ml-12 lg:ml-16">
+              The tech world evolves rapidly, and I make it a priority to stay ahead of the curve. 
+              From experimenting with cutting-edge technologies to adopting the latest design trends, 
+              I’m always looking for ways to innovate and deliver the best to my clients.
+
+
+            </p>
+          </div>
+          <div class="flex relative flex-col gap-6 mt-24 opacity-0 transition-opacity duration-500 scroll-trigger">
+            <h2 class="font-tickerbit text-left font-bold text-xs lg:text-xs text-nowrap uppercase">
+              [11.] &nbspTeamWork Makes the dream Work
+            </h2>
+            <p class="max-w-md font-tickerbit text-xs items-center justify-center ml-16 md:ml-12 lg:ml-16">
+              I’ve collaborated with some of the best minds 
+              in tech and design to create solutions that make an impact.
+            </p>
+          </div>
+          <div class="flex relative flex-col gap-6 mt-24 opacity-0 transition-opacity duration-500 scroll-trigger">
+            <h2 class="font-tickerbit text-left font-bold text-sm lg:text-xs text-nowrap uppercase">
+              [12.] &nbspTools Of The Trade
+            </h2>
+            <p class="max-w-md font-tickerbit text-xs items-center justify-center ml-16 md:ml-12 lg:ml-16">
+              I’ve had the opportunity to work on a variety of projects 
+              across different platforms, utilizing languages and frameworks 
+              like JavaScript, React, and Python. With each project, I add a 
+              new tool to my toolbox, enhancing my ability to provide top-notch 
+              service to clients of all sizes.
+            </p>
+          </div>
+          <div class="flex relative flex-col gap-6 mt-24 opacity-0 transition-opacity duration-500 scroll-trigger">
+            <h2 class="font-tickerbit text-left font-bold text-sm lg:text-xs text-nowrap uppercase">
+              [13.] &nbspClient-whisperer
+            </h2>
+            <p class="max-w-md font-tickerbit text-xs items-center justify-center ml-16 md:ml-12 lg:ml-16">
+              Understanding client needs is my thing. 
+              I get to the heart of your vision and deliver 
+              exactly what you're looking for.
+            </p>
+          </div>
+          <div class="flex relative flex-col gap-6 mt-24 opacity-0 transition-opacity duration-500 scroll-trigger">
+            <h2 class="font-tickerbit text-left font-bold text-sm lg:text-xs text-nowrap uppercase">
+              [14.] &nbspA Passion For Excellence
+            </h2>
+            <p class="max-w-md font-tickerbit text-xs items-center justify-center ml-16 md:ml-12 lg:ml-16">
+              At the heart of everything I do is a passion for excellence. 
+              Whether I’m coding, designing, or collaborating, my goal is 
+              always to deliver work that not only meets but exceeds client expectations. 
+              The journey doesn’t end until I know the client is thrilled with the result.
+            </p>
+          </div>
+          <div class="flex relative flex-col gap-6 mt-24 opacity-0 transition-opacity duration-500 scroll-trigger">
+            <h2 class="font-tickerbit text-left font-bold text-sm lg:text-xs text-nowrap uppercase">
+              [15.] &nbspTech And Chill
+            </h2>
+            <p class="max-w-md font-tickerbit text-xs items-center justify-center ml-16 md:ml-12 lg:ml-16">
+              I love what I do, and that passion comes through in every project. 
+              Whether it’s coding or designing, I’m always up for a challenge.
+            </p>
+          </div>
+        </div>
       </div>
     </section>
-    <!-- about -->
-    <section
-      id="about"
-      class="about relative h-screen flex flex-col justify-center items-center"
-    >
-      <div class="absolute top-8 left-0 z-[2] text-3xl">
-        Hi! I'm a software and graphics developer passionate about merging
-        technology with creativity. My work spans across web development,
-        software solutions, and digital design, where I strive to craft
-        engaging, user-centered experiences. With a strong background in both
-        programming and visual design, I enjoy tackling projects that require
-        both logic and artistic flair. Whether I'm developing responsive
-        websites, creating dynamic interfaces, or designing eye-catching
-        graphics, I focus on delivering solutions that are functional, visually
-        compelling, and optimized for performance. Driven by curiosity and a
-        desire to innovate, I continuously explore new tools and techniques to
-        stay at the forefront of the ever-evolving tech landscape. My work
-        philosophy emphasizes clean code, attention to detail, and a user-first
-        approach. Feel free to explore my projects, and don’t hesitate to get in
-        touch if you’d like to collaborate or learn more about my work.
+    <section class="h-full w-full bg-gray-100 p-12">
+      <div class="flex flex-col">
+        <div class="flex justify-center text-wrap p-8 py-8">
+          <h1 class="text-black text-6xl font-audiowide font-bold text-right">
+            What Defijn's Me.
+          </h1>
+        </div>
+        <div class="flex flex-col md:flex-row lg:flex-row gap-12">
+          <div class="">
+            <img src="../images/undr_ Bill Brandt_ London, 1930s (Art Deco).jpeg" class="p-4 rounded-sm items-start max-w-md max-h-[400px]">
+          </div>
+          <p class="text-black font-switzer max-w-md uppercase ml-8">
+              I’m constantly evolving, blending the lines between creativity and technology. 
+              My passion for pushing boundaries fuels my drive to craft solutions that resonate 
+              with clients on a global scale.
+            </p>
+            <p class="text-black font-switzer max-w-md uppercase ml-6">
+              Coding long hours into the night, often fueled by coffee, 
+              I understand the dedication required to meet high client expectations. 
+              For me, it’s all about achieving the perfect balance of creativity, precision, 
+              and functionality.
+            </p>
+        </div>
+        <div class="flex flex-col md:flex-row lg:flex-row gap-8 justify-end">
+          <div class="flex relative flex-col ">
+            <div class="">
+              <img src="../images/laptop.jpg" class="p-4 rounded-sm items-start justify-start max-w-md max-h-[400px]">
+            </div>
+          </div>
+          <div class="flex relative flex-col ">
+            <div class="">
+              <img src="../images/aesthetic3.jpeg" class="p-4 rounded-sm items-start justify-start max-w-md max-h-[400px]">
+            </div>
+          </div>
+          <div class="flex relative flex-col ">
+            <div class="">
+              <img src="../images/aesthetic1.jpeg" class="p-4 rounded-sm items-start max-w-md max-h-[400px]">
+            </div>
+          </div>
+        </div>
       </div>
     </section>
-    <!-- more -->
-     <section id="more" class="section bg-black relative h-screen flex flex-col justify-center items-center">
-      <div class="flex flex-col items-center justify-center h-screen">
-        <h1 class="text-3xl text-green-400 font-tickerbit">More;</h1>
+    <section class="bg-gray-200 w-full h-full p-4 gap-4 box-border relative">
+      <div class="flex relative box-border flex-col gap-8 p-8">
+        <div class="flex flex-col md:flex-row lg:flex-row items-start justify-between p-2 md:p-4 lg:p-8">
+          <div class="">
+            <h1 class="text-4xl text-black font-oswald uppercase py-4 font-bold">
+              Innovation<br>
+              in My DNA
+            </h1>
+          </div>
+          <div class="">
+            <p class="text-black text-lg max-w-md uppercase p-4">
+              I’m constantly evolving, blending the lines between 
+              creativity and technology. My passion for pushing boundaries 
+              fuels my drive to craft solutions that resonate with clients on a global scale.
+            </p>
+          </div>
+          <div class="">
+            <img src="../images/ken1.jpg" class="p-4 rounded-sm items-start max-w-md max-h-[400px]">
+          </div>
+        </div>
+        <div class="flex flex-col md:flex-row lg:flex-row items-start justify-between sm:justify-start gap-4 md:p-4 lg:p-8">
+          <div class="flex relative">
+            <img src="../images/London photography_ candid street portraits from Alan Schaller.jpeg" class="hidden lg:block rounded-sm items-start max-w-md max-h-[400px]">
+          </div>
+          <div class="">
+            <h1 class="text-4xl text-black font-oswald uppercase py-4 font-bold">
+              Code &<br>
+              Creativity
+            </h1>
+          </div>
+          <div class="">
+            <img src="../images/code-aesthetic.jpeg" class="block lg:hidden p-4 rounded-sm items-start max-w-md max-h-[400px]">
+          </div>
+          <div class="">
+            <p class="text-black text-lg max-w-md uppercase">
+              What defines me is my ability to merge two worlds—technology and creativity. 
+              I’m a developer by trade, but at heart, I’m an artist. Writing clean, efficient 
+              code is one part of the equation, but infusing it with design and purpose is 
+              what sets my work apart. Every project I take on isn’t just about solving a 
+              problem, it’s about creating something that’s intuitive, functional, and 
+              visually engaging.
+            </p>
+          </div>
+        </div>
+        <div class="flex flex-col md:flex-row lg:flex-row items-start justify-between p-8 gap-6">
+          <div class="">
+            <h1 class="text-4xl text-black font-oswald uppercase py-4 font-bold">
+              Curiosity &<br>
+              Purpose
+            </h1>
+          </div>
+          <div class="">
+            <p class="text-black text-lg max-w-md uppercase">
+               In an industry that never stands still, staying curious keeps me ahead of the curve. 
+               It’s this thirst for knowledge that pushes me to experiment, innovate, and explore 
+               new possibilities in every project I work on.
+               Everything I do has a purpose. I believe in building things that matter—solutions 
+               that not only work well but make a real impact.
+            </p>
+          </div>
+          <div class="">
+            <img src="../images/Curiosity.jpeg" class="p-4 rounded-sm items-start max-w-md max-h-[400px]">
+          </div>
+        </div>
+        <div class="flex flex-col md:flex-row lg:flex-row items-start justify-end p-8 gap-6 lg:gap-12">
+          <div class="">
+            
+          </div>
+          <div class="flex flex-col">
+            <h1 class="text-4xl text-black font-oswald uppercase py-4 font-bold">
+              precision &<br>
+              Creativity
+            </h1>
+            <p class="text-black text-lg max-w-md uppercase">
+              I blend logic and creativity seamlessly, solving complex problems 
+              with precise, innovative solutions. Whether working with top-tier 
+              clients or personal projects, I deliver designs that are as functional 
+              as they are beautiful.
+            </p>
+          </div>
+          <div class="">
+            <img src="../images/mirror-chess.jpeg" class="rounded-sm items-start max-w-sm max-h-[400px]">
+          </div>
+        </div>
+
       </div>
-     </section>
+    </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="py-20 h-auto bg-black">
+    <section id="contact" class="py-20 h-auto  bg-black">
       <div
         class="flex flex-col md:flex-row sm:justify-center lg:flex-row justify-center gap-12 p-10 lg:p-20"
       >
@@ -330,7 +666,7 @@
           <h5 class="font-tickerbit text-sm text-left py-4">[Email]</h5>
           <a href="mailto:kennethmuchiri7168@gmail.com"
              class="font-tickerbit text-sm text-left hover:underline underline-offset-4">
-              Email Me
+              Email Me <i class="far fa-envelope"></i>
             </a
           >
         </div>
@@ -338,7 +674,7 @@
           <h5 class="font-tickerbit text-sm text-left py-4">[Youtube]</h5>
           <a href="https://www.youtube.com/@code_versity_official"
             ><p class="font-tickerbit text-sm hover:underline">
-              View My Youtube Channel<i class="fas fa-arrow-right ml-2"></i>
+              View My Youtube Channel <i class="fab fa-youtube"></i>
             </p></a
           >
         </div>
@@ -346,7 +682,7 @@
           <h5 class="font-tickerbit text-sm items-start py-4">[GitHub]</h5>
           <a href="https://github.com/MuchiriK"
             ><p class="font-tickerbit text-sm hover:underline">
-              My Github
+              My Github <i class="fab fa-github"></i>
             </p></a
           >
         </div>
@@ -359,10 +695,10 @@
               class="secondary_link w-inline-block"
             >
               <div
-                class="hover:text-green-400 font-tickerbit text-sm hover:underline"
+                class="hover:text-blue-600 font-tickerbit text-sm hover:underline"
               >
-                LinkedIn
-              </div>
+                LinkedIn <i class="fab fa-linkedin-in"></i>
+              </div> 
             </a>
             <a
               href="https://www.instagram.com/_m.u.c.h.i.r.i.i/"
@@ -370,9 +706,9 @@
               class="secondary_link w-inline-block"
             >
               <div
-                class="hover:text-green-400 font-tickerbit text-sm hover:underline"
+                class="hover:text-purple-500 font-tickerbit text-sm hover:underline"
               >
-                Instagram
+                Instagram <i class="fab fa-instagram"></i>
               </div>
             </a>
             <a
@@ -381,9 +717,9 @@
               class="secondary_link w-inline-block"
             >
               <div
-                class="hover:text-green-400 font-tickerbit text-sm hover:underline"
+                class="hover:text-purple-500 font-tickerbit text-sm hover:underline"
               >
-                TikTok
+                TikTok <i class="fab fa-tiktok"></i>
               </div>
             </a>
             <a
@@ -392,9 +728,9 @@
               class="secondary_link w-inline-block"
             >
               <div
-                class="hover:text-green-400 font-tickerbit text-sm hover:underline"
+                class="hover:text-blue-300 font-tickerbit text-sm hover:underline"
               >
-                Twitter x
+                Twitter <i class="fab fa-twitter"></i>
               </div>
             </a>
             <a
@@ -403,9 +739,9 @@
               class="secondary_link w-inline-block"
             >
               <div
-                class="hover:text-green-400 font-tickerbit text-sm hover:underline"
+                class="hover:text-blue-500 font-tickerbit text-sm hover:underline"
               >
-                Facebook
+                Facebook <i class="fab fa-facebook-f"></i>
               </div>
             </a>
           </div>
