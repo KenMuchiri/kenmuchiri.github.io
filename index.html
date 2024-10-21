@@ -20,10 +20,10 @@
   <link href="https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=New+Amsterdam&display=swap" rel="stylesheet">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
-  <link href="src/output.css" rel="stylesheet">
-  <link href="src/input.css" rel="stylesheet">
-  <link href="src/style.css" rel="stylesheet">
-  <link rel="icon" href="src/images/advice.jfif" />
+  <link href="/src/output.css" rel="stylesheet">
+  <link href="/src/input.css" rel="stylesheet">
+  <link href="/src/style.css" rel="stylesheet">
+  <link rel="icon" href="/src/images/advice.jfif" />
   <script src="https://cdn.tailwindcss.com"></script>
   <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
   <style>
@@ -65,12 +65,12 @@
     <!-- Navigation links for larger screens -->
     <nav
       class="hidden lg:flex ml-2 mr-4 space-x-4 px-4 uppercase font-tickerbit text-xs lg:text-sm items-baseline box-border">
-      <a href="#home" id="home-link" class="text-white hover:text-green-500">Home.</a>
-      <a href="src/pages/about.html" id="about-link" class="text-white hover:text-green-500">About.</a>
-      <a href="src/pages/services.html" id="services-link" class="text-white hover:text-green-500">Services.</a>
-      <a href="src/pages/work.html" id="work-link" class="text-white hover:text-green-500">Work.</a>
-      <a href="src/pages/blog.html" id="blog-link" class="text-white hover:text-green-500">Blog.</a>
-      <a href="src/pages/contact.html" id="contact-link" class="text-white hover:text-green-500">Contact.</a>
+      <a href="/" id="home-link" class="text-white hover:text-green-500">Home.</a>
+      <a href="/about/" id="about-link" class="text-white hover:text-green-500">About.</a>
+      <a href="/services/" id="services-link" class="text-white hover:text-green-500">Services.</a>
+      <a href="/work/" id="work-link" class="text-white hover:text-green-500">Work.</a>
+      <a href="/blog/" id="blog-link" class="text-white hover:text-green-500">Blog.</a>
+      <a href="/contact/" id="contact-link" class="text-white hover:text-green-500">Contact.</a>
     </nav>
 
     <!-- Dropdown for smaller screens -->
@@ -82,16 +82,16 @@
       </div>
       <ul tabindex="0"
         class="menu menu-sm dropdown-content bg-glass rounded-box z-[1] w-42 p-2 shadow fixed top-8 right-2 align-middle items-start">
-        <li><a href="#" id="home-link" class="font-tickerbit text-sm text-white hover:text-green-500">Home.</a></li>
-        <li><a href="/src/pages/about.html" id="about-link" class="font-tickerbit text-sm text-white hover:text-green-500">About.</a>
+        <li><a href="/" id="home-link" class="font-tickerbit text-sm text-white hover:text-green-500">Home.</a></li>
+        <li><a href="/about/" id="about-link" class="font-tickerbit text-sm text-white hover:text-green-500">About.</a>
         </li>
-        <li><a href="/src/pages/services.html" id="services-link"
+        <li><a href="/services/" id="services-link"
             class="font-tickerbit text-sm text-white hover:text-green-500">Services.</a></li>
         <li><a href="#resume" id="resume-link"
             class="font-tickerbit text-sm text-white hover:text-green-500">Resume.</a></li>
-        <li><a href="/src/pages/work.html" id="work-link" class="font-tickerbit text-sm text-white hover:text-green-500">Work.</a></li>
-        <li><a href="/src/pages/blog.html" id="blog-link" class="font-tickerbit text-sm text-white hover:text-green-500">Blog.</a></li>
-        <li><a href="/src/pages/contact.html" id="contact-link"
+        <li><a href="/work/" id="work-link" class="font-tickerbit text-sm text-white hover:text-green-500">Work.</a></li>
+        <li><a href="/blog/" id="blog-link" class="font-tickerbit text-sm text-white hover:text-green-500">Blog.</a></li>
+        <li><a href="/contact/" id="contact-link"
             class="font-tickerbit text-sm text-white hover:text-green-500">Contact.</a></li>
       </ul>
     </div>
@@ -100,7 +100,7 @@
   <!-- Hero Section -->
   <section id="home"
     class="hero relative h-screen flex flex-col justify-center items-center bg-no-repeat bg-cover bg-center box-border"
-    style="background-image: url('src/images/home\ page\ wallpaper.png');">
+    style="background-image: url('/src/images/home\ page\ wallpaper.png');">
     <!-- Overlay for faded aesthetic -->
     <div class="hero-overlay absolute inset-0 bg-black opacity-10"></div>
 
@@ -124,7 +124,7 @@
     <div
       class="fixed bottom-4 left-0 text-left px-4 py-4 gap-2 space-y-1 z-900 sm:text-xs md:fixed lg:fixed xl:block box-border">
       <!-- Contact Us Link -->
-      <a href="src/pages/contact.html"
+      <a href="/contact/"
         class="text-white text-xs uppercase font-tickerbit hover:underline inline-flex items-start">
         Contact Me
         <span class="ml-4 bg-transparent text-xs font-tickerbit">↗</span>
@@ -161,7 +161,7 @@
       </div>
       <!-- Call to Action -->
       <div class="flex justify-center">
-        <a href="src/pages/contact.html">
+        <a href="/contact/">
           <button class="btn btn-outline text-white border-white hover:bg-white hover:text-black">
             Get in Touch →
           </button>
@@ -173,16 +173,16 @@
   <section id="images" class="bg-black h-auto block box-border relative p-20">
     <div class="flex flex-col md:flex-row lg:flex-row xl:flex-row justify-end gap-4 p-4 lg:p-10">
       <!-- Image 1 -->
-      <img class="p-4 rounded-sm items-start max-w-md max-h-[400px]" src="src/images/Ken-Software-Developer.jpg"
+      <img class="p-4 rounded-sm items-start max-w-md max-h-[400px]" src="/src/images/Ken-Software-Developer.jpg"
         alt="Ken SoftwareDeveloper">
 
       <!-- Image 2 -->
       <img class="p-4 rounded-sm items-start max-w-md max-h-[400px]"
-        src="src/images/Ken-Software-Developer-in-a-Software-Summit.jpg"
+        src="/src/images/Ken-Software-Developer-in-a-Software-Summit.jpg"
         alt="Ken Software Developer in a Software Summit">
 
       <!-- Image 3 -->
-      <img class="p-4 rounded-sm items-start max-w-md max-h-[400px]" src="src/images/ken-nairobi.jpeg"
+      <img class="p-4 rounded-sm items-start max-w-md max-h-[400px]" src="/src/images/ken-nairobi.jpeg"
         alt="Ken web developer">
     </div>
   </section>
@@ -191,7 +191,7 @@
     <div class="flex flex-row p-2 items-center">
       <h1 class="flex text-xs lg:text-lg font-tickerbit items-start justify-center flex-nowrap text-nowrap uppercase">
         [My Services]</h1>
-      <a href="src/pages/services.html">
+      <a href="/services/">
         <button
           class="flex btn btn-outline flex-nowrap text-nowrap h-1 text-xs lg:text-md rounded-full ml-6 box-border p-4 bg-transparent hover:text-white">
           View All Services <i class="fas fa-arrow-right ml-2"></i>
@@ -262,7 +262,7 @@
       </div>
       <!-- Service Image -->
       <div class="flex justify-center items-center">
-        <img src="src/images/digital-products-design.jpg" alt="Digital Product Design"
+        <img src="/src/images/digital-products-design.jpg" alt="Digital Product Design"
           class="service-image max-w-xs sm:max-w-xs md:max-w-sm lg:max-w-md xl:max-w-md h-auto sm:h-xs border-2 border-spacing-4 border-white rounded-lg transition-transform duration-500 ease-in-out transform scale-100 hover:scale-105"
           id="service-image">
       </div>
@@ -271,46 +271,46 @@
   <div class="collage">
     <div class="photo-block">
       <div class="photo-grid">
-        <div class="photo"><img src="src/images/Ken-Software-Developer-in-a-Software-Summit.jpg" alt=""></div>
-        <div class="photo"><img src="src/images/ken in park1.jpg" alt=""></div>
+        <div class="photo"><img src="/src/images/Ken-Software-Developer-in-a-Software-Summit.jpg" alt=""></div>
+        <div class="photo"><img src="/src/images/ken in park1.jpg" alt=""></div>
         <div class="photo"><img src="src/images/ken photoss.jpg" alt=""></div>
-        <div class="photo"><img src="src/images/ken10.jpg" alt=""></div>
+        <div class="photo"><img src="/src/images/ken10.jpg" alt=""></div>
         <div class="photo"><img src="https://picsum.photos/600/800?random=1" alt=""></div>
-        <div class="photo"><img src="src/images/ken11.jpg" alt=""></div>
-        <div class="photo"><img src="src/images/ken12.jpg" alt=""></div>
-        <div class="photo"><img src="src/images/ken13.jpg" alt=""></div>
+        <div class="photo"><img src="/src/images/ken11.jpg" alt=""></div>
+        <div class="photo"><img src="/src/images/ken12.jpg" alt=""></div>
+        <div class="photo"><img src="/src/images/ken13.jpg" alt=""></div>
         <div class="photo"><img src="https://picsum.photos/600/800?random=2" alt=""></div>
-        <div class="photo"><img src="src/images/ken14.jpg" alt=""></div>
-        <div class="photo"><img src="src/images/ken15.jpg" alt=""></div>
+        <div class="photo"><img src="/src/images/ken14.jpg" alt=""></div>
+        <div class="photo"><img src="/src/images/ken15.jpg" alt=""></div>
         <div class="photo"><img src="https://picsum.photos/600/800?random=3" alt=""></div>
-        <div class="photo"><img src="src/images/ken16.jpg" alt=""></div>
+        <div class="photo"><img src="/src/images/ken16.jpg" alt=""></div>
         <div class="photo"><img src="src/images/ken17.jpg" alt=""></div>
         <div class="photo"><img src="https://picsum.photos/600/800?random=4" alt=""></div>
-        <div class="photo"><img src="src/images/ken18.jpg" alt=""></div>
+        <div class="photo"><img src="/src/images/ken18.jpg" alt=""></div>
         <div class="photo"><img src="https://picsum.photos/600/800?random=5" alt=""></div>
-        <div class="photo"><img src="src/images/ken19.jpg" alt=""></div>
-        <div class="photo"><img src="src/images/ken20.jpg" alt=""></div>
+        <div class="photo"><img src="/src/images/ken19.jpg" alt=""></div>
+        <div class="photo"><img src="/src/images/ken20.jpg" alt=""></div>
         <div class="photo"><img src="https://picsum.photos/600/800?random=6" alt=""></div>
-        <div class="photo"><img src="src/images/ken21.jpg" alt=""></div>
+        <div class="photo"><img src="/src/images/ken21.jpg" alt=""></div>
         <div class="photo"><img src="https://picsum.photos/600/800?random=7" alt=""></div>
         <div class="photo"><img src="src/images/ken22.jpg" alt=""></div>
         <div class="photo"><img src="https://picsum.photos/600/800?random=8" alt=""></div>
-        <div class="photo"><img src="src/images/ken23.jpg" alt=""></div>
+        <div class="photo"><img src="/src/images/ken23.jpg" alt=""></div>
         <div class="photo"><img src="src/images/ken24.jpg" alt=""></div>
         <div class="photo"><img src="https://picsum.photos/600/800?random=9" alt=""></div>
-        <div class="photo"><img src="src/images/ken25.jpg" alt=""></div>
+        <div class="photo"><img src="/src/images/ken25.jpg" alt=""></div>
         <div class="photo"><img src="https://picsum.photos/600/800?random=10" alt=""></div>
-        <div class="photo"><img src="src/images/ken26.jpg" alt=""></div>
-        <div class="photo"><img src="src/images/ken27.jpg" alt=""></div>
+        <div class="photo"><img src="/src/images/ken26.jpg" alt=""></div>
+        <div class="photo"><img src="/src/images/ken27.jpg" alt=""></div>
         <div class="photo"><img src="https://picsum.photos/600/800?random=11" alt=""></div>
-        <div class="photo"><img src="src/images/ken28.jpg" alt=""></div>
-        <div class="photo"><img src="src/images/ken29.jpg" alt=""></div>
-        <div class="photo"><img src="src/images/Ken-Software-Developer.jpg" alt=""></div>
+        <div class="photo"><img src="/src/images/ken28.jpg" alt=""></div>
+        <div class="photo"><img src="/src/images/ken29.jpg" alt=""></div>
+        <div class="photo"><img src="/src/images/Ken-Software-Developer.jpg" alt=""></div>
         <div class="photo"><img src="https://picsum.photos/600/800?random=12" alt=""></div>
-        <div class="photo"><img src="src/images/ken-nairobi.jpeg" alt=""></div>
+        <div class="photo"><img src="/src/images/ken-nairobi.jpeg" alt=""></div>
         <div class="photo"><img src="https://picsum.photos/600/800?random=13" alt=""></div>
-        <div class="photo"><img src="src/images/ken32.jpg" alt=""></div>
-        <div class="photo"><img src="src/images/ken in park1.jpg" alt=""></div>
+        <div class="photo"><img src="/src/images/ken32.jpg" alt=""></div>
+        <div class="photo"><img src="/src/images/ken in park1.jpg" alt=""></div>
         <div class="photo"><img src="https://picsum.photos/600/800?random=28" alt=""></div>
         <div class="photo"><img src="https://picsum.photos/600/800?random=29" alt=""></div>
         <div class="photo"><img src="https://picsum.photos/600/800?random=30" alt=""></div>
@@ -332,7 +332,7 @@
         enabling boundless possibilities and limitless client growth.</p>
       <button
         class="btn btn-outline w-60 mt-8 rounded-full px-0 text-gray-700 hover:bg-black hover:text-gray-300 transition-colors duration-500"><a
-          href="src/pages/about.html">READ MORE ABOUT ME</a><i class="fas fa-arrow-right ml-2"></i></button>
+          href="/about/">READ MORE ABOUT ME</a><i class="fas fa-arrow-right ml-2"></i></button>
       <div class="mt-28 mb-6 items-start justify-start font-prime text-sm lg:text-md">
         ____________ [CLIENTS]
       </div>
@@ -407,7 +407,7 @@
           [Project Title]
         </h1>
         <!-- Work Image -->
-        <img src="src/images/frqncy1.png" alt="Frequency"
+        <img src="/src/images/frqncy1.png" alt="Frequency"
           class="work-image w-72 md:max-w-96 border-2 border-white rounded-lg transition-transform duration-150 ease-in-out transform scale-100 hover:scale-105"
           id="work-image" />
       </div>
@@ -533,7 +533,6 @@
   <section id="blog" class="relative flex flex-col h-full py-20 px-4 lg:px-10 bg-gray-50 box-border">
     <div class="mx-auto px-6">
       <h1 class="font-bold text-black text-xl font-switzer uppercase">
-        BLOG:
         Read My blog for expert tips on web development, software engineering, and design strategies using
         the latest
         tech.</h1>
@@ -546,7 +545,7 @@
           path to becoming a developer was full of challenges,
           learning, and a deepening passion for technology that I could not have anticipated.
         </p>
-        <a href="src/pages/blogs/blog1.html" class="text-yellow-400 hover:text-white">Read more</a>
+        <a href="/blog/blog1.html" class="text-yellow-400 hover:text-orange-400">Read more</a>
       </article>
       <article class="mb-6 border-b border-gray-700 py-6">
         <h3 class="text-xl font-teko py-2 text-black">Understanding JavaScript Closures</h3>
@@ -555,7 +554,7 @@
           JavaScript.
           In this post, we’ll break down closures in simple terms and explore how they work with practical examples.
         </p>
-        <a href="src/pages/blogs/blog2.html" class="text-yellow-400 hover:text-white">Read more</a>
+        <a href="/blog/blog2.html" class="text-yellow-400 hover:text-orange-400">Read more</a>
       </article>
       <article class="py-6">
         <h3 class="text-xl font-teko py-2 text-black">CSS Grid vs. Flexbox</h3>
@@ -565,7 +564,7 @@
           In this post, we'll compare CSS Grid and Flexbox, discuss their differences, and help you decide which one to
           use depending on your needs.
         </p>
-        <a href="src/pages/blogs/blog3.html" class="text-yellow-400 hover:text-white">Read more</a>
+        <a href="/blog/blog3.html" class="text-yellow-400 hover:text-orange-400">Read more</a>
       </article>
     </div>
   </section>
@@ -719,7 +718,7 @@
           class="fab fa-linkedin"></i></a>
     </div>
   </footer>
-  <script src="src/scrpits/script.js"></script>
+  <script src="/src/scripts/script.js "></script>
 </body>
 
 </html>
