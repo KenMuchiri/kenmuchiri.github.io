@@ -1,5 +1,15 @@
 module.exports = {
-  content: ["./src/**/*.{html,js}"],
+  content: [
+    "./*.html", // All HTML files in the root
+    "./about/**/*.html", // HTML files in the 'about' folder
+    "./blog/**/*.html", // HTML files in the 'blog' folder
+    "./contact/**/*.html", // HTML files in the 'contact' folder
+    "./portfolio/**/*.html", // HTML files in the 'portfolio' folder
+    "./services/**/*.html", // HTML files in the 'services' folder
+    "./work/**/*.html", // HTML files in the 'work' folder
+    "./src/pages/**/*.html", // Additional HTML files in src/pages
+    "./src/**/*.{js,jsx,ts,tsx}", // JavaScript or TypeScript files in src
+  ],
   theme: {
     extend: {
       screens: {
