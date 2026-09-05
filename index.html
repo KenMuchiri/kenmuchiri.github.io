@@ -4,737 +4,239 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- cache control -->
-  <meta http-equiv="Cache-Control" content="max-age=31536000, must-revalidate">
-  <!-- google search console verification -->
-  <meta name="google-site-verification" content="6F2DQiMuvcwPPAOLevEVncf19g8XEk4l6mUIq6np6Jk" />
-  <title>Ken Muchiri - Ranked Best Software Developer and Web Developer in Kenya 2024</title>
+  <title>Ken Muchiri — Founder & CEO, AlphaAI | Nairobi</title>
   <meta name="description"
-    content="Ken Muchiri is a top software developer and web developer in Kenya, specializing in custom web design with modern technologies. Ken Muchiri Web Developer in Kenya Portfolio.">
+    content="Ken Muchiri is the Nairobi-based founder and CEO of AlphaAI, building useful technology for African realities through an economist's and philosopher's lens.">
+  <link rel="canonical" href="https://kenmuchiri.github.io/">
+  <meta name="google-site-verification" content="6F2DQiMuvcwPPAOLevEVncf19g8XEk4l6mUIq6np6Jk" />
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Ken Muchiri — Founder & CEO, AlphaAI | Nairobi">
+  <meta property="og:description"
+    content="Nairobi-based founder and CEO building useful technology for African realities.">
+  <meta property="og:url" content="https://kenmuchiri.github.io/">
+  <meta property="og:image" content="https://kenmuchiri.github.io/src/images/og-image.jpg">
+  <meta property="og:site_name" content="Ken Muchiri">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Ken Muchiri — Founder & CEO, AlphaAI | Nairobi">
+  <meta name="twitter:description"
+    content="Nairobi-based founder and CEO building useful technology for African realities.">
+  <meta name="twitter:image" content="https://kenmuchiri.github.io/src/images/og-image.jpg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Handjet:wght@100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
-    rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=New+Amsterdam&display=swap" rel="stylesheet">
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
-  <link href="/src/output.css" rel="stylesheet">
-  <link href="/src/style.css" rel="stylesheet">
-  <link rel="icon" href="/src/images/MUCHIRI.png" />
-  <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
-  <style>
-    /* Custom fonts */
-    .font-prime {
-      font-family: 'Courier Prime', monospace;
-      font-display: swap;
-    }
-
-    .font-handjet {
-      font-family: 'Handjet', sans-serif;
-    }
-
-    .font-audiowide {
-      font-family: 'Audiowide', sans-serif;
-    }
-
-    .font-switzer {
-      font-family: 'Switzer', sans-serif;
-    }
-
-    .font-hakobi {
-      font-family: 'Hakobi Condensed', sans-serif;
-    }
-
-    .font-amsterdam {
-      font-family: 'New Amsterdam', sans-serif;
-    }
-  </style>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="/src/main.css" rel="stylesheet">
+  <link rel="icon" href="/src/images/MUCHIRI.png">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Ken Muchiri",
+    "url": "https://kenmuchiri.github.io/",
+    "image": "https://kenmuchiri.github.io/src/images/Ken-Software-Deeloper.webp",
+    "jobTitle": "Founder & CEO",
+    "worksFor": {
+      "@type": "Organization",
+      "name": "AlphaAI",
+      "url": "https://alphaai.co.ke"
+    },
+    "alumniOf": {
+      "@type": "CollegeOrUniversity",
+      "name": "University of Nairobi"
+    },
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Nairobi",
+      "addressCountry": "KE"
+    },
+    "sameAs": [
+      "https://alphaai.co.ke"
+    ]
+  }
+  </script>
 </head>
 
-<body class="bg-black text-white box-border">
-  <!-- Header -->
+<body>
+  <nav class="site-nav">
+    <a href="/" class="brand">
+      <img src="/src/images/MUCHIRI.png" alt="Muchiri logo">
+      <span>MUCHIRI</span>
+    </a>
+    <div class="nav-links">
+      <a href="/">Home</a>
+      <a href="/about/">About</a>
+      <a href="/services/">Services</a>
+      <a href="/portfolio/">Work</a>
+      <a href="/blog/">Writing</a>
+      <a href="/contact/">Contact</a>
+    </div>
+    <a href="/contact/" class="nav-cta">Start a Conversation</a>
+    <button class="nav-toggle" aria-label="Toggle menu">&#9776;</button>
+  </nav>
 
-  <header
-    class="fixed flex flex-row z-10 top-0 right-0 left-0 justify-between items-center p-4 bg-transparent box-border">
-    <h1 class="text-lg lg:text-3xl md:text-2xl lg:ml-4 font-bold font-audiowide uppercase">Muchiri.</h1>
-
-    <!-- Navigation links for larger screens -->
-    <nav
-      class="hidden lg:flex ml-2 mr-4 space-x-4 px-4 uppercase font-tickerbit text-xs lg:text-sm items-baseline box-border">
-      <a href="/" id="home-link" class="text-white hover:text-green-500">Home.</a>
-      <a href="/about/" id="about-link" class="text-white hover:text-green-500">About.</a>
-      <a href="/services/" id="services-link" class="text-white hover:text-green-500">Skills.</a>
-      <a href="/portfolio/" id="work-link" class="text-white hover:text-green-500">Projects.</a>
-      <a href="/blog/" id="blog-link" class="text-white hover:text-green-500">Blog.</a>
-      <a href="/contact/" id="contact-link" class="text-white hover:text-green-500">Contact.</a>
-    </nav>
-
-    <!-- Dropdown for smaller screens -->
-    <div class="flex lg:hidden dropdown">
-      <div tabindex="0" role="button" class="btn btn-ghost btn-circle">
-        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h7" />
-        </svg>
+  <section style="padding-top:180px; padding-bottom:100px; overflow:hidden;">
+    <div class="bg-grid"></div>
+    <div class="bg-glow" style="width:520px;height:520px;background:#0066FF;top:-140px;right:-120px;"></div>
+    <div class="wrap home-hero" style="position:relative; z-index:2;">
+      <div class="home-hero-copy">
+        <span class="eyebrow reveal">Nairobi &middot; Founder &amp; CEO, AlphaAI</span>
+        <h1 class="reveal">
+          Building what<br>
+          Nairobi sees<br>
+          next.
+        </h1>
+        <p class="lede reveal" style="margin-top:26px;">
+          Hello, there! I&rsquo;m Ken Muchiri, founder and CEO of
+          <a href="https://alphaai.co.ke" target="_blank" rel="noopener" class="grad-text"
+            style="font-weight:600;">AlphaAI</a>.
+          I build useful technology for African realities, informed by my
+          studies in economics and philosophy.
+        </p>
+        <div class="reveal" style="margin-top:40px; display:flex; gap:16px; flex-wrap:wrap;">
+          <a href="https://alphaai.co.ke" target="_blank" rel="noopener" class="btn btn-primary">Explore AlphaAI</a>
+          <a href="/about/" class="btn btn-ghost">Meet Ken</a>
+        </div>
       </div>
-      <ul tabindex="0"
-        class="menu menu-sm dropdown-content bg-glass rounded-box z-[1] w-42 p-2 shadow fixed top-8 right-2 align-middle items-start">
-        <li><a href="/" id="home-link" class="font-tickerbit text-sm text-white hover:text-green-500">Home.</a></li>
-        <li><a href="/about/" id="about-link" class="font-tickerbit text-sm text-white hover:text-green-500">About.</a>
-        </li>
-        <li><a href="/services/" id="services-link"
-            class="font-tickerbit text-sm text-white hover:text-green-500">Skills.</a></li>
-        <li><a href="#resume" id="resume-link"
-            class="font-tickerbit text-sm text-white hover:text-green-500">Resume.</a></li>
-        <li><a href="/portfolio/" id="work-link" class="font-tickerbit text-sm text-white hover:text-green-500">Portfolio.</a></li>
-        <li><a href="/blog/" id="blog-link" class="font-tickerbit text-sm text-white hover:text-green-500">Blog.</a></li>
-        <li><a href="/contact/" id="contact-link"
-            class="font-tickerbit text-sm text-white hover:text-green-500">Contact.</a></li>
-      </ul>
-    </div>
-  </header>
-
-  <!-- Hero Section -->
-  <section id="home"
-    class="hero relative h-screen flex flex-col justify-center items-center bg-no-repeat bg-cover bg-center box-border"
-    style="background-image: url('/src/images/home\ page\ wallpaper.webp');">
-    <!-- Overlay for faded aesthetic -->
-    <div class="hero-overlay absolute inset-0 bg-black opacity-10"></div>
-
-    <!-- Content inside the hero section -->
-    <div class="absolute z-20 lg:left-40 sm:left-10 md:left-20 top-1/2 transform -translate-y-1/2 text-left text-white">
-      <h1 class="text-8xl md:text-9xl lg:text-12xl font-bold font-switzer">Hello</h1>
-      <div class="flex flex-row">
-        <hr class="border mt-8 ml-2 w-1/4 border-gray-300 dark:border-gray-700">
-        <h2 class="mt-4 ml-2 text-sm font-teko text-nowrap">
-          this is me being creative
-        </h2>
-      </div>
-    </div>
-    <div class="absolute bottom-32 right-2 lg:right-12 p-6 px-4 lg:p-8 justify-end items-end max-w-sm box-border">
-      <h2 class="text-xs lg:text-sm tracking-wide font-switzer font-semibold text-wrap uppercase text-right">
-        Explore the portfolio of Ken Muchiri, a software developer and graphics designer, specializing in web design
-        using
-        Flutter, React, Python, Tailwind CSS and more.
-      </h2>
-    </div>
-    <div
-      class="fixed bottom-4 left-0 text-left px-4 py-4 gap-2 space-y-1 z-900 sm:text-xs md:fixed lg:fixed xl:block box-border">
-      <!-- Contact Us Link -->
-      <a href="/contact/"
-        class="text-white text-xs uppercase font-tickerbit hover:underline inline-flex items-start">
-        Contact Me
-        <span class="ml-4 bg-transparent text-xs font-tickerbit">↗</span>
-      </a>
-      <!-- Clock Section -->
-      <div id="clock" class="items-start justify-start font-tickerbit text-xs lg:text-sm"></div>
-
-      <!-- Location Section -->
-      <div id="location" class="text-xs font-tickerbit uppercase">[Fetching location <span
-          class="loading loading-ring loading-sm"></span>]</div>
+      <figure class="home-hero-image reveal">
+        <img src="/src/images/ken-professional-portrait.jpeg" alt="Ken Muchiri, founder and CEO of AlphaAI">
+        <figcaption class="mono small">Ken Muchiri &middot; Founder, Economist, Philosopher</figcaption>
+      </figure>
     </div>
   </section>
 
+  <section class="tight" style="border-top:1px solid var(--line);">
+    <div class="wrap">
+      <div class="grid grid-4 reveal">
+        <div>
+          <div class="mono small" style="color:var(--cyan); margin-bottom:8px;">01</div>
+          <p style="color:var(--ink); font-size:14px;">Founder &amp; CEO, AlphaAI</p>
+        </div>
+        <div>
+          <div class="mono small" style="color:var(--pink); margin-bottom:8px;">02</div>
+          <p style="color:var(--ink); font-size:14px;">Four products in build</p>
+        </div>
+        <div>
+          <div class="mono small" style="color:var(--amber); margin-bottom:8px;">03</div>
+          <p style="color:var(--ink); font-size:14px;">Economics + philosophy</p>
+        </div>
+        <div>
+          <div class="mono small" style="color:var(--green); margin-bottom:8px;">04</div>
+          <p style="color:var(--ink); font-size:14px;">Based in Nairobi, Kenya</p>
+        </div>
+      </div>
+    </div>
   </section>
-  <!-- About Section -->
-  <section id="about" class="relative w-full min-h-screen h-screen bg-black text-white p-10 lg:p-28 mb-10">
-    <div class="flex flex-col items-start py-48 lg:px-36 lg:p-20 gap-12">
-      <!-- Title -->
-      <h1 class="text-6xl md:text-8xl lg:text-7xl font-bold font-switzer">MY STORY.</h1>
-      <!-- First Paragraph -->
-      <div class="flex justify-start w-full items-center">
-        <p class="max-w-md text-left text-lg md:text-2xl lg:text-2xl font-switzer leading-9 uppercase tracking-wider">
-          Hi there, I'm Ken Muchiri a software developer blending creativity and logic to craft clean,
-          innovative solutions.
-          I’m all about pushing the boundaries of what tech can do.
-        </p>
-      </div>
-      <!-- Second Paragraph -->
-      <div class="flex justify-end w-full items-center mt-8 md:mt-10 lg:mt-12 lg:mr-60">
-        <p class="max-w-md text-lg uppercase font-switzer tracking-tight">
-          Curiosity drives me forward. Whether it’s a complex project or a new challenge,
-          I’m always ready to dive in and bring innovative solutions to the table.
-        </p>
-      </div>
-      <!-- Call to Action -->
-      <div class="flex justify-center mb-64">
-        <a href="/contact/">
-          <button class="btn btn-outline text-white border-white hover:bg-white hover:text-black">
-            Get in Touch →
-          </button>
+
+  <section>
+    <div class="wrap">
+      <span class="eyebrow reveal">The AlphaAI thesis</span>
+      <h2 class="reveal">Useful technology<br>for real life.</h2>
+      <div class="rule reveal"></div>
+      <div class="grid grid-2" style="margin-top:20px;">
+        <a href="/about/" class="card reveal" style="border-top:3px solid #176b67;">
+          <div class="tag" style="margin-bottom:14px;">Economics</div>
+          <h3>Incentives</h3>
+          <p style="margin-top:10px; font-size:13.5px;">The quiet forces that shape decisions, markets, and
+            institutions.</p>
+        </a>
+        <a href="/blog/" class="card reveal" style="border-top:3px solid #b84f3d;">
+          <div class="tag" style="margin-bottom:14px;">Philosophy</div>
+          <h3>First Principles</h3>
+          <p style="margin-top:10px; font-size:13.5px;">Questions about knowledge, power, meaning, and the good life.
+          </p>
+        </a>
+        <a href="/portfolio/" class="card reveal" style="border-top:3px solid #54734d;">
+          <div class="tag" style="margin-bottom:14px;">Technology</div>
+          <h3>Useful Machines</h3>
+          <p style="margin-top:10px; font-size:13.5px;">Tools should widen agency, not simply automate whatever is
+            easiest.</p>
+        </a>
+        <a href="/contact/" class="card reveal" style="border-top:3px solid #c68428;">
+          <div class="tag" style="margin-bottom:14px;">Practice</div>
+          <h3>From Thought to Work</h3>
+          <p style="margin-top:10px; font-size:13.5px;">Building, testing, and revising ideas in public.</p>
         </a>
       </div>
     </div>
   </section>
-  <!-- Images Section -->
-  <section id="images" class="bg-black h-auto block box-border relative p-20">
-    <div class="flex flex-col md:flex-row lg:flex-row xl:flex-row justify-end gap-4 p-4 lg:p-10">
-      <!-- Image 1 -->
-      <img class="p-4 rounded-sm items-start max-w-md max-h-[400px]" src="/src/images/Ken-Software-Deeloper.webp"
-        alt="Ken Software Developer">
 
-      <!-- Image 2 -->
-      <img class="p-4 rounded-sm items-start max-w-md max-h-[400px]"
-        src="/src/images/Ken-Software-Developer-in-a-Software-Summit.jpg"
-        alt="Ken Software Developer in a Software Summit">
-
-      <!-- Image 3 -->
-      <img class="p-4 rounded-sm items-start max-w-md max-h-[400px]" src="/src/images/ken.webp"
-        alt="Ken web developer">
-    </div>
-  </section>
-  <!-- Skills Section -->
-  <section id="services" class="flex flex-col relative h-auto items-between box-border bg-black p-10 lg:p-20">
-    <div class="flex flex-row p-2 items-center">
-      <h1 class="flex text-xs lg:text-lg font-tickerbit items-start justify-center flex-nowrap text-nowrap uppercase">
-        [My Skills]</h1>
-      <a href="/services/">
-        <button
-          class="flex btn btn-outline flex-nowrap text-nowrap h-1 text-xs lg:text-md rounded-full ml-6 box-border p-4 bg-transparent hover:text-white">
-          View All Skills <i class="fas fa-arrow-right ml-2"></i>
-        </button>
-      </a>
-    </div>
-    <div class="flex flex-col lg:flex-row md:flex-row h-auto items-center justify-center box-border mb-20">
-      <div class="w-full lg:w-full flex flex-col ml-8 lg:ml-14 lg:flex-row justify-center items-start space-y-3 p-8">
-        <!-- Service List -->
-        <ul class="space-y-2 text-lg lg:text-4xl gap-4 font-tickerbit group text-white">
-          <li
-            class="service-item relative cursor-pointer text-white group transition-all duration-500 ease-in-out transform hover:scale-105 hover:translate-x-2"
-            data-image="HealthIQ App Chat Interface Mockup.webp">
-            Cross-Platform Development
-            <div class="service-description hidden mt-2 text-sm text-gray-300 font-switzer">
-              [Usign Flutter and Dart to Create intuitive and engaging product designs for digital systems.]
-            </div>
-          </li>
-          <li
-            class="service-item relative cursor-pointer text-white group transition-all duration-500 ease-in-out transform hover:scale-105 hover:translate-x-2"
-            data-image="product-ideation-and-valuation.webp">
-            Product Ideation & Valuation
-            <div class="service-description hidden mt-2 text-sm text-gray-300 font-switzer">
-              [Ideating and validating product ideas.]
-            </div>
-          </li>
-          <li
-            class="service-item relative cursor-pointer text-white group transition-all duration-500 ease-in-out transform hover:scale-105 hover:translate-x-2"
-            data-image="software-development.webp">
-            Front-End Development
-            <div class="service-description hidden mt-2 text-sm text-gray-300 font-switzer">
-              [Using React Js, Flutter, Angular Js, Vite, Vue Js, Typescript, JQuery, Tailwind CSS and Bootstrap in <br> creating scalable and efficient front-end solutions.]
-            </div>
-          </li>
-          <li
-            class="service-item relative cursor-pointer text-white group transition-all duration-500 ease-in-out transform hover:scale-105 hover:translate-x-2"
-            data-image="HealthIQ App Chat Interface Mockup.webp">
-            Mobile App Development
-            <div class="service-description hidden mt-2 text-sm text-gray-300 font-switzer">
-              [Using Flutter, Dart, Kotlin for enhanced Mobile App development solutions.]
-            </div>
-          </li>
-          <!-- <li
-            class="service-item relative cursor-pointer text-white group transition-all duration-500 ease-in-out transform hover:scale-105 hover:translate-x-2"
-            data-image="design-and-branding.webp">
-            Branding
-            <div class="service-description hidden mt-2 text-sm text-gray-300 font-switzer">
-              [Scalable branding solutions.]
-            </div>
-          </li> -->
-          <li
-            class="service-item relative cursor-pointer text-white group transition-all duration-500 ease-in-out transform hover:scale-105 hover:translate-x-2"
-            data-image="digital-marketing.webp">
-            Machine Learning, AI Development, Chatbot
-            <div class="service-description hidden mt-2 text-sm text-gray-300 font-switzer">
-              [Utilizing Machine Learning technologies like Python Pycharm, Tensorflow, ScikitLearn, to create Intelligent Systems.]
-            </div>
-          </li>
-          <li
-            class="service-item relative cursor-pointer text-white group transition-all duration-500 ease-in-out transform hover:scale-105 hover:translate-x-2"
-            data-image="seo.webp">
-            SEO
-            <div class="service-description hidden mt-2 text-sm text-gray-300 font-switzer items-center">
-              [Make your brand visible online using search engine optimization skills.]
-            </div>
-          </li>
-        </ul>
+  <section class="tight" style="border-top:1px solid var(--line);">
+    <div class="wrap" style="display:flex; gap:60px; flex-wrap:wrap; align-items:center;">
+      <div style="flex:1; min-width:280px;">
+        <img src="/src/images/graph.jfif" alt="Ken Muchiri speaking at a software summit" class="reveal"
+          style="border-radius:8px; border:1px solid var(--line);">
       </div>
-      <!-- Skill Image -->
-      <div class="flex justify-center items-center">
-        <img src="/src/images/iPhone SE - 1.webp" alt="Digital Product Design"
-          class="service-image w-[100px] md:w-[300px] lg:max-w-md xl:w-[900px] 2xl:w-[300px] h-auto border-2 border-spacing-4 border-white rounded-lg transition-transform duration-500 ease-in-out transform scale-100 hover:scale-105"
-          id="service-image">
+      <div style="flex:1; min-width:280px;">
+        <span class="eyebrow reveal">The lens</span>
+        <h2 class="reveal">Economics asks why.<br>Philosophy asks whether.</h2>
+        <p class="lede reveal" style="margin-top:20px;">
+          Economics helps me see the incentives around a problem. Philosophy
+          helps me examine the assumptions inside it. Together they offer a
+          useful discipline for deciding what deserves to be built.
+        </p>
+        <a href="/about/" class="btn btn-ghost reveal" style="margin-top:24px;">Read the Approach</a>
       </div>
     </div>
   </section>
-  <!-- <div class="collage">
-    <div class="photo-block">
-      <div class="photo-grid">
-        <div class="photo"><img src="/src/images/Ken-Software-Developer-in-a-Software-Summit.jpg" alt=""></div>
-        <div class="photo"><img src="/src/images/ken in park1.jpg" alt="Ken Software Developer"></div>
-        <div class="photo"><img src="src/images/ken photoss.jpg" alt=""></div>
-        <div class="photo"><img src="/src/images/Ken-Software-Deeloper.webp" alt=""></div>
-        <div class="photo"><img src="https://picsum.photos/600/800?random=1" alt=""></div>
-        <div class="photo"><img src="/src/images/ken11.jpg" alt=""></div>
-        <div class="photo"><img src="/src/images/ken12.jpg" alt=""></div>
-        <div class="photo"><img src="/src/images/ken13.jpg" alt=""></div>
-        <div class="photo"><img src="https://picsum.photos/600/800?random=2" alt=""></div>
-        <div class="photo"><img src="/src/images/ken14.jpg" alt=""></div>
-        <div class="photo"><img src="/src/images/ken15.jpg" alt=""></div>
-        <div class="photo"><img src="https://picsum.photos/600/800?random=3" alt=""></div>
-        <div class="photo"><img src="/src/images/ken16.jpg" alt=""></div>
-        <div class="photo"><img src="src/images/ken17.jpg" alt=""></div>
-        <div class="photo"><img src="https://picsum.photos/600/800?random=4" alt=""></div>
-        <div class="photo"><img src="/src/images/ken18.jpg" alt=""></div>
-        <div class="photo"><img src="https://picsum.photos/600/800?random=5" alt=""></div>
-        <div class="photo"><img src="/src/images/ken19.jpg" alt=""></div>
-        <div class="photo"><img src="/src/images/ken20.jpg" alt=""></div>
-        <div class="photo"><img src="https://picsum.photos/600/800?random=6" alt=""></div>
-        <div class="photo"><img src="/src/images/ken21.jpg" alt=""></div>
-        <div class="photo"><img src="https://picsum.photos/600/800?random=7" alt=""></div>
-        <div class="photo"><img src="src/images/ken22.jpg" alt=""></div>
-        <div class="photo"><img src="https://picsum.photos/600/800?random=8" alt=""></div>
-        <div class="photo"><img src="/src/images/ken23.jpg" alt=""></div>
-        <div class="photo"><img src="src/images/ken24.jpg" alt=""></div>
-        <div class="photo"><img src="https://picsum.photos/600/800?random=9" alt=""></div>
-        <div class="photo"><img src="/src/images/ken25.jpg" alt=""></div>
-        <div class="photo"><img src="https://picsum.photos/600/800?random=10" alt=""></div>
-        <div class="photo"><img src="/src/images/ken26.jpg" alt=""></div>
-        <div class="photo"><img src="/src/images/ken27.jpg" alt=""></div>
-        <div class="photo"><img src="https://picsum.photos/600/800?random=11" alt=""></div>
-        <div class="photo"><img src="/src/images/ken28.jpg" alt=""></div>
-        <div class="photo"><img src="/src/images/ken29.jpg" alt=""></div>
-        <div class="photo"><img src="/src/images/Ken-Software-Developer.jpg" alt=""></div>
-        <div class="photo"><img src="https://picsum.photos/600/800?random=12" alt=""></div>
-        <div class="photo"><img src="/src/images/ken-nairobi.jpeg" alt=""></div>
-        <div class="photo"><img src="https://picsum.photos/600/800?random=13" alt=""></div>
-        <div class="photo"><img src="/src/images/ken32.jpg" alt=""></div>
-        <div class="photo"><img src="/src/images/ken in park1.jpg" alt=""></div>
-        <div class="photo"><img src="https://picsum.photos/600/800?random=28" alt=""></div>
-        <div class="photo"><img src="https://picsum.photos/600/800?random=29" alt=""></div>
-        <div class="photo"><img src="https://picsum.photos/600/800?random=30" alt=""></div>
-        <div class="photo"><img src="https://picsum.photos/600/800?random=31" alt=""></div>
-        <div class="photo"><img src="https://picsum.photos/600/800?random=32" alt=""></div>
-        <div class="photo"><img src="https://picsum.photos/600/800?random=33" alt=""></div>
-        <div class="photo"><img src="https://picsum.photos/600/800?random=34" alt=""></div>
-        <div class="photo"><img src="https://picsum.photos/600/800?random=35" alt=""></div>
-      </div> -->
-    <!-- </div>
-  </div> -->
-  <!-- Resume -->
-  <section id="resume"
-    class="flex flex-col lg:flex-row bg-gray-400 text-pretty text-black p-20 items-end justify-between box-border">
-    <div class="flex flex-col mx-2 lg:mx-20">
-      <h3 class="font-tickerbit uppercase mb-6">[RESUME]</h3>
-      <p class="font-switzer uppercase">My aim has been to become a trailblazer in the field of human-centered digital
-        interfaces.
-        enabling boundless possibilities and limitless client growth.</p>
-      <button
-        class="btn btn-outline w-60 mt-8 rounded-full px-0 text-gray-700 hover:bg-black hover:text-gray-300 transition-colors duration-500"><a
-          href="/about/">READ MORE ABOUT ME</a><i class="fas fa-arrow-right ml-2"></i></button>
-      <div class="mt-28 mb-6 items-start justify-start font-prime text-sm lg:text-md">
-        ____________ [CLIENTS]
-      </div>
-      <P class="font-switzer uppercase mb-16">I am a locally-trusted software-developer
-        joining forces with a client base across an array of industries
-      </P>
-      <div class="mt-28 mb-6 items-start justify-start font-prime text-sm lg:text-md">
-        ____________ [PROJECTS]
-      </div>
-      <P class="font-switzer uppercase mb-16">I PRIDE MYSELF IN EXCEPTIONAL CLIENT RETENTION. MOST OF MY CLIENTS BECOME
-        LONG-TERM
-        PARTNERS WITH MULTIPLE PROJECT ASSIGNMENTS AND ONGOING ENGAGEMENTS.
-      </P>
-      <div class="mt-28 mb-6 items-start justify-start font-prime text-sm lg:text-md">
-        ____________ [SKILLS]
-      </div>
-      <P class="font-switzer uppercase mb-16">
-        High-level programming skills with knowledge in fundamental principles
-        of programming including but not-limited to HTML, CSS, JAVASCRIPT, PYTHON, DART,
-        KOTLIN AND NECESSARRY FRAMEWORKS.
-      </P>
 
-    </div>
-    <div class="flex flex-col mx-2 lg:mx-20">
-      <div class="mt-28 mb-6 items-start justify-start font-prime text-sm lg:text-md">
-        _______ [CONSTANCIA]
+  <section style="border-top:1px solid var(--line);">
+    <div class="wrap">
+      <span class="eyebrow reveal">Beyond the product</span>
+      <h2 class="reveal">Building an AI future<br>people can share.</h2>
+      <div class="rule reveal"></div>
+      <div class="grid grid-3" style="margin-top:20px;">
+        <article class="card reveal" style="border-top:3px solid var(--green);">
+          <div class="mono small" style="color:var(--green); margin-bottom:18px;">01 &middot; SUSTAINABILITY</div>
+          <h3>AI that can last</h3>
+          <p style="margin-top:12px; font-size:14px; line-height:1.7;">I am pushing AlphaAI to become a sustainable AI innovation initiative: building responsibly, solving durable problems, and creating value beyond the next demo.</p>
+        </article>
+        <article class="card reveal" style="border-top:3px solid var(--cyan);">
+          <div class="mono small" style="color:var(--cyan); margin-bottom:18px;">02 &middot; COMMUNITY</div>
+          <h3>More builders in the room</h3>
+          <p style="margin-top:12px; font-size:14px; line-height:1.7;">From Nairobi and beyond, I am growing a community of young techies who learn together, build boldly, and see themselves as authors of Africa&rsquo;s technical future.</p>
+        </article>
+        <article class="card reveal" style="border-top:3px solid var(--amber);">
+          <div class="mono small" style="color:var(--amber); margin-bottom:18px;">03 &middot; ACCESS</div>
+          <h3>Useful AI for everyone</h3>
+          <p style="margin-top:12px; font-size:14px; line-height:1.7;">The goal is not to make AI feel exclusive.I am working toward tools that are understandable, affordable, and relevant to the people and businesses they are meant to serve.</p>
+        </article>
       </div>
-      <p class="font-switzer uppercase">
-        I am a passionate and driven individual with a strong desire to create meaningful and impactful digital
-        experiences that drive
-        <span class="font-bold">results</span> and <span class="font-bold">
-          <a href="https://www.linkedin.com/in/kenneth-muchiri-muongi/" target="_blank" class="text-blue-500 hover:text-blue-700 transition-all duration-500 ease-in-out transform hover:
-                    scale-105 hover:translate-x-2">connections</a>
-        </span>.
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap center">
+      <span class="eyebrow reveal">Work with Ken</span>
+      <h2 class="reveal">Bring me a hard problem.</h2>
+      <p class="lede reveal mx-auto center" style="margin: 20px auto 0;">
+        For partnerships, speaking, advisory work, or a problem you want to
+        build through carefully.
       </p>
-      <div class="mt-28 mb-6 items-start justify-start font-prime text-sm lg:text-md">
-        _______ [DISCIPLINA]
-      </div>
-      <P class="font-switzer uppercase mb-16">
-        I am a detail-oriented and organized individual with a strong work ethic and a passion for delivering
-        <span class="font-bold">high-quality</span> work that meets and exceeds client
-        expectations.
-      </P>
-      <div class="mt-28 mb-6 items-start justify-start font-prime text-sm lg:text-md">
-        _______ [DEDICACAO]
-      </div>
-      <P class="font-switzer uppercase mb-16">
-        I am a dedicated and committed individual who is always willing to go the extra mile to ensure
-        <span class="font-bold">client satisfaction</span> and
-        <span class="font-bold">
-          <a href="https://www.linkedin.com/in/kenneth-muchiri-muongi/" target="_blank" class="text-blue-500 hover:text-blue-700 transition-all duration-500 ease-in-out transform hover:
-                    scale-105 hover:translate-x-2">success</a>
-        </span>.
-      </P>
-    </div>
+      <a href="/contact/" class="btn btn-primary reveal" style="margin-top:32px;">Start a Conversation</a>
     </div>
   </section>
-  <!-- My Work -->
-  <section id="work"
-    class="relative h-full items-center justify-center box-border bg-black p-2 md:p-36 lg:p-20 py-24 md:px-10 lg:px-16">
-    <div class="flex sticky top-20 flex-row mt-16 ml-16 items-center justify-start box-border">
-        <h1 class="text-xs lg:text-lg font-tickerbit uppercase text-white">
-          [My Projects]
-        </h1>
-      </div>
-    <div class="flex relative flex-row md:flex-row lg:flex-row h-full items-start justify-center box-border mb-20 p-2 md:p-14 lg:p-14">
-      <!-- Project Title -->
-      <div class="flex flex-col sticky top-20 justify-center items-start p-4">
-        <h1 id="project-title"
-          class="text-xs lg:text-sm font-tickerbit uppercase text-white py-2 transition-all duration-150 transform text-nowrap">
-          [Project Title]
-        </h1>
-        <!-- Work Image -->
-        <img src="/src/images/iPhone SE - 1.webp" alt="Software development projects"
-          class="work-image w-72 md:max-w-96 border-2 border-white rounded-lg transition-transform duration-150 ease-in-out transform scale-100 hover:scale-105"
-          id="work-image" />
-      </div>
-      <!-- work items -->
-      <div class="relative w-full lg:w-full flex flex-col lg:ml-14 justify-center items-center space-y-6 p-8">
-        <ul
-          class="space-y-4 text-xl lg:text-4xl gap-2 font-tickerbit group text-gray-300 hover:text-white transition-all cursor-pointer duration-300">
-          <li
-            class="work-item flex flex-col lg:flex-col gap-4 justify-start items-start relative uppercase font-tickerbit text-white transition-all duration-150 transform hover:scale-105 hover:translate-x-6 hover:translate-y-2 cursor-pointer"
-            data-image="ceemble.webp" data-title="CEEMBLE">
-            CEEMBLE
-            <div class="work-description hidden mt-2 font-switzer text-gray-400 text-sm lg:text-md uppercase cursor-pointer">
-              [WEB DEV / SEO / UI/UX]
-            </div>
-          </li>
-          <!-- <li
-            class="work-item flex flex-col lg:flex-col gap-4 justify-start items-start relative uppercase font-tickerbit text-white transition-all duration-150 transform hover:scale-105 hover:translate-x-6 hover:translate-y-2 cursor-pointer"
-            data-image="frqncy.webp" data-title="FRQNCY">
-            FRQNCY
-            <div class="work-description hidden mt-2 font-switzer text-gray-400 text-sm lg:text-md uppercase cursor-pointer">
-              [AI / Web Dev / SEO / UI/UX / BRANDING / LOW CODE]
-            </div>
-          </li> -->
-          <!-- <li
-            class="work-item flex flex-col lg:flex-col gap-4 justify-start items-start relative uppercase font-tickerbit text-white transition-all duration-150 transform hover:scale-105 hover:translate-x-6 hover:translate-y-2 cursor-pointer"
-            data-image="kaleidoscope.webp" data-title="KLDSCP">
-            KLDSCP
-            <div class="work-description hidden mt-2 font-switzer text-gray-400 text-sm lg:text-md uppercase cursor-pointer">
-              [Web Dev / SEO / UI/UX / BRANDING]
-            </div>
-          </li> -->
-          <!-- <li
-            class="work-item flex flex-col lg:flex-col gap-4 justify-start items-start relative uppercase font-tickerbit text-white transition-all duration-150 transform hover:scale-105 hover:translate-x-6 hover:translate-y-2 cursor-pointer"
-            data-image="la ciiris.webp" data-title="CIIRI'S">
-            CIIRI'S
-            <div class="work-description hidden mt-2 font-switzer text-gray-400 text-sm lg:text-md uppercase cursor-pointer">
-              [Web Dev / SEO / UI/UX / lOW CODE DEV]
-            </div>
-          </li> -->
-          <!-- <li
-            class="work-item flex flex-col lg:flex-col gap-4 justify-start items-start relative uppercase font-tickerbit text-white transition-all duration-150 transform hover:scale-105 hover:translate-x-6 hover:translate-y-2 cursor-pointer"
-            data-image="Curiosity.webp" data-title="CURIOSITY">
-            CURIOSITY -->
-            <!-- TRIVIA APP -->
-            <!-- <div class="work-description hidden mt-2 font-switzer text-gray-400 text-sm lg:text-md uppercase cursor-pointer">
-              [Web Dev / SEO / UI/UX / lOW CODE DEV]
-            </div>
-          </li> -->
-          <li
-            class="work-item flex flex-col lg:flex-col gap-4 justify-start items-start relative uppercase font-tickerbit text-white transition-all duration-150 transform hover:scale-105 hover:translate-x-6 hover:translate-y-2 cursor-pointer"
-            data-image="iPhone SE - 1.webp" data-title="KADE">
-            KADE WEBSITE
-            <!-- TRIVIA APP -->
-            <div class="work-description hidden mt-2 font-switzer text-gray-400 text-sm lg:text-md uppercase cursor-pointer">
-              [Web Dev / SEO / UI/UX / Web Design]
-            </div>
-          </li>
-          <li
-            class="work-item flex flex-col lg:flex-col gap-4 justify-start items-start relative uppercase font-tickerbit text-white transition-all duration-150 transform hover:scale-105 hover:translate-x-6 hover:translate-y-2 cursor-pointer"
-            data-image="app-dev.webp" data-title="HEALTHIQ">
-            HEALTHIQ
-            <!-- telemedicine platform that provide virtual consultations and remote health monitoring -->
-            <div class="work-description hidden mt-2 font-switzer text-gray-400 text-sm lg:text-md uppercase cursor-pointer">
-              [APP DEV / CROSS-PLATFORM DEV ]
-            </div>
-          </li>
-          <!-- <li
-            class="work-item flex flex-col lg:flex-col gap-4 justify-start items-start relative uppercase font-tickerbit text-white transition-all duration-150 transform hover:scale-105 hover:translate-x-6 hover:translate-y-2 cursor-pointer"
-            data-image="Lab.webp" data-title="DECENTIN">
-            DECENTIN -->
-            <!-- DECENTRALIZED INSUARACE -->
-            <!-- <div class="work-description hidden mt-2 font-switzer text-gray-400 text-sm lg:text-md uppercase cursor-pointer">
-              [Web Dev / SEO / UI/UX / lOW CODE DEV]
-            </div>
-          </li> -->
-          <li
-            class="work-item flex flex-col lg:flex-col gap-4 justify-start items-start relative uppercase font-tickerbit text-white transition-all duration-150 transform hover:scale-105 hover:translate-x-6 hover:translate-y-2 cursor-pointer"
-            data-image="Healthiq-Home.webp" data-title="ECOMART">
-            Symptom Predict
-            <!-- Sustainable e-commerce platforms that prioritize eco-friendly products and materials -->
-            <div class="work-description hidden mt-2 font-switzer text-gray-400 text-sm lg:text-md uppercase cursor-pointer">
-              [Web Dev / App Dev/ UI/UX]
-            </div>
-          </li>
-          <!-- <li
-            class="work-item flex flex-col lg:flex-col gap-4 justify-start items-start relative uppercase font-tickerbit text-white transition-all duration-150 transform hover:scale-105 hover:translate-x-6 hover:translate-y-2 cursor-pointer"
-            data-image="vector.webp" data-title="BITLEND">
-            BITLEND -->
-            <!-- Blockchain-based lending and borrowing platforms with smart contracts that eliminate the need for banks. -->
-            <!-- <div class="work-description hidden mt-2 font-switzer text-gray-400 text-sm lg:text-md uppercase cursor-pointer">
-              [Web Dev / SEO / UI/UX / lOW CODE DEV]
-            </div>
-          </li> -->
-          <!-- <li
-            class="work-item flex flex-col lg:flex-col gap-4 justify-start items-start relative uppercase font-tickerbit text-white transition-all duration-150 transform hover:scale-105 hover:translate-x-6 hover:translate-y-2 cursor-pointer"
-            data-image="Lab.webp" data-title="CARBOTRACK">
-            CARBOTRACK -->
-            <!-- Carbon tracking apps that help companies measure and offset their carbon emissions. -->
-            <!-- <div class="work-description hidden mt-2 font-switzer text-gray-400 text-sm lg:text-md uppercase cursor-pointer">
-              [Web Dev / SEO / UI/UX / lOW CODE DEV]
-            </div>
-          </li> -->
-          <!-- <li
-            class="work-item flex flex-col lg:flex-col gap-4 justify-start items-start relative uppercase font-tickerbit text-white transition-all duration-150 transform hover:scale-105 hover:translate-x-6 hover:translate-y-2 cursor-pointer"
-            data-image="visibility.webp" data-title="VISIBILITY">
-            VISIBILITY
-            <div class="work-description hidden mt-2 font-switzer text-gray-400 text-sm lg:text-md uppercase cursor-pointer">
-              [Web Dev / SEO / UI/UX / lOW CODE DEV]
-            </div>
-          </li> -->
-          <!-- <li
-            class="work-item flex flex-col lg:flex-col gap-4 justify-start items-start relative uppercase font-tickerbit text-white transition-all duration-150 transform hover:scale-105 hover:translate-x-6 hover:translate-y-2 cursor-pointer"
-            data-image="allure scents.webp" data-title="ALLURE SCENTS">
-            ALLURE SCENTS
-            <div class="work-description hidden mt-2 font-switzer text-gray-400 text-sm lg:text-md uppercase cursor-pointer">
-              [Web Dev / SEO / UI/UX / lOW CODE DEV]
-            </div>
-          </li> -->
-          <!-- <li
-            class="work-item flex flex-col lg:flex-col gap-4 justify-start items-start relative uppercase font-tickerbit text-white transition-all duration-150 transform hover:scale-105 hover:translate-x-6 hover:translate-y-2 cursor-pointer"
-            data-image="Creative ad design.webp" data-title="OPTIMIZED">
-            OPTIMIZED -->
-            <!-- AI-driven task management tools that automatically prioritize tasks and optimize work schedules -->
-            <!-- <div class="work-description hidden mt-2 font-switzer text-gray-400 text-sm lg:text-md uppercase cursor-pointer">
-              [Web Dev / SEO / UI/UX / lOW CODE DEV]
-            </div>
-          </li> -->
-          <li
-            class="work-item flex flex-col lg:flex-col gap-4 justify-start items-start relative uppercase font-tickerbit text-white transition-all duration-150 transform hover:scale-105 hover:translate-x-6 hover:translate-y-2 cursor-pointer"
-            data-image="greenovex-projects.webp" data-title="GREENOVEX">
-            GREENOVEX
-            <!-- AI-driven CYBERSECURITY SOLUTION -->
-            <div class="work-description hidden mt-2 font-switzer text-gray-400 text-sm lg:text-md uppercase cursor-pointer">
-              [Web Dev / SEO / UI/UX / lOW CODE DEV]
-            </div>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </section>
-  <!-- Blog Section -->
-  <section id="blog" class="relative flex flex-col h-full py-20 px-4 lg:px-10 bg-gray-50 box-border">
-    <div class="mx-auto px-6">
-      <h1 class="font-bold text-black text-xl font-switzer uppercase">
-        Read My blog for expert tips on web development, software engineering, and design strategies using
-        the latest
-        tech.</h1>
-      <article class="mb-6 border-b border-gray-700 py-6">
-        <h2 class="text-xl font-teko py-2 text-black">
-          My Journey into Software Development
-        </h2>
-        <p class="text-gray-400 py-2 font-teko">Software development wasn’t always in my plans. In fact,
-          like many, I stumbled into it rather unexpectedly. Looking back now, I realize that the
-          path to becoming a developer was full of challenges,
-          learning, and a deepening passion for technology that I could not have anticipated.
+  <footer>
+    <div class="wrap">
+      <a href="/" class="footer-name">Muchiri.</a>
+      <div class="footer-grid">
+        <p class="small mono" style="color:var(--muted); max-width:420px;">
+          Notes on economics, philosophy, and technology. Built from Nairobi.
         </p>
-        <a href="/blog/blog1.html" class="text-yellow-400 hover:text-orange-400">Read more</a>
-      </article>
-      <article class="mb-6 border-b border-gray-700 py-6">
-        <h3 class="text-xl font-teko py-2 text-black">Understanding JavaScript Closures</h3>
-        <p class="text-gray-400 py-2 font-teko">JavaScript closures are one of those concepts that tend to confuse new developers.
-          The idea can seem abstract at first, but once understood, closures become one of the most powerful features in
-          JavaScript.
-          In this post, we’ll break down closures in simple terms and explore how they work with practical examples.
-        </p>
-        <a href="/blog/blog2.html" class="text-yellow-400 hover:text-orange-400">Read more</a>
-      </article>
-      <article class="py-6">
-        <h3 class="text-xl font-teko py-2 text-black">CSS Grid vs. Flexbox</h3>
-        <p class="text-gray-400 py-2 font-teko">When it comes to modern web layout techniques, two of the most
-          commonly used systems are <strong>CSS Grid</strong> and <strong>Flexbox</strong>.
-          While both offer powerful ways to create responsive layouts, each has specific use cases where it excels.
-          In this post, we'll compare CSS Grid and Flexbox, discuss their differences, and help you decide which one to
-          use depending on your needs.
-        </p>
-        <a href="/blog/blog3.html" class="text-yellow-400 hover:text-orange-400">Read more</a>
-      </article>
-    </div>
-  </section>
-
-  <!-- Contact Section -->
-  <section id="contact" class="py-20 h-auto bg-black">
-    <div class="flex flex-col md:flex-row sm:justify-center lg:flex-row justify-center gap-12 p-10 lg:p-20">
-      <div class="max-w-md lg:max-w-lg mb-8 lg:mb-0">
-        <h1 class="text-4xl lg:text-4xl mb-4 font-bold font-switzer text-white">
-          LET’S MAKE YOUR IDEAS A REALITY.
-        </h1>
-        <p class="text-base font-switzer text-white">
-          SHARE SOME INFORMATION WITH ME TO GET STARTED.
-        </p>
-      </div>
-      <div class="flex flex-col max-w-md">
-        <div class="mb-6">
-          <p class="text-md font-tickerbit font-bold mb-2 text-gray-500">
-            [WHAT CAN I HELP YOU WITH?]
-          </p>
-          <div class="flex flex-wrap gap-4 text-white">
-            <label class="inline-flex items-center">
-              <input type="checkbox" name="services[]" value="All" class="form-checkbox text-white" />
-              <span class="ml-2 font-tickerbit sm:text-sm">ALL</span>
-            </label>
-            <label class="inline-flex items-center">
-              <input type="checkbox" name="services[]" value="Design" class="form-checkbox text-white" />
-              <span class="ml-2 font-tickerbit sm:text-sm">DESIGN</span>
-            </label>
-            <label class="inline-flex items-center">
-              <input type="checkbox" name="services[]" value="Development" class="form-checkbox text-white" />
-              <span class="ml-2 font-tickerbit sm:text-sm">DEVELOPMENT</span>
-            </label>
-            <label class="inline-flex items-center">
-              <input type="checkbox" name="services[]" value="Marketing" class="form-checkbox text-white" />
-              <span class="ml-2 font-tickerbit sm:text-sm">MARKETING</span>
-            </label>
-          </div>
-        </div>
-        <div class="w-full">
-          <p class="text-base font-bold mb-2 text-gray-500 font-tickerbit">
-            [CONTACT INFORMATION]
-          </p>
-          <form action="https://formspree.io/f/xjkbqbvz" method="POST" class="flex flex-col text-white">
-            <label class="text-sm mb-2">FULL NAME*</label>
-            <input type="text" id="name" name="name" required
-              class="bg-transparent border-b border-dashed border-white text-white mb-4 p-1 focus:outline-none" />
-
-            <label class="text-sm mb-2">EMAIL*</label>
-            <input type="email" id="email" name="email" required
-              class="bg-transparent border-b border-dashed border-white text-white mb-4 p-1 focus:outline-none" />
-
-            <label class="text-sm mb-2">COMPANY:</label>
-            <input type="text" id="company" name="company"
-              class="bg-transparent border-b border-dashed border-white text-white mb-4 p-1 focus:outline-none" />
-
-            <label class="text-sm mb-2">MESSAGE:</label>
-            <textarea id="message" name="message"
-              class="bg-transparent border-b border-dashed border-white text-white mb-4 p-1 h-20 focus:outline-none"></textarea>
-
-            <button type="submit"
-              class="btn glass w-lg font-switzer self-center mt-5 p-5 text-white hover:bg-white hover:text-black transition-all">
-              SUBMIT
-            </button>
-
-            <!-- Formspree Hidden Attributes (At the End of the Form) -->
-            <input type="hidden" name="_next" value="src/pages/thankyou.html" />
-            <input type="hidden" name="_subject" value="New contact form submission!" />
-          </form>
-
-          <!-- Error and Success Message Display -->
-          <div id="form-messages" class="mt-4 text-white"></div>
+        <div class="footer-links">
+          <a href="/about/">About</a>
+          <a href="/portfolio/">Work</a>
+          <a href="/services/">Services</a>
+          <a href="/blog/">Writing</a>
+          <a href="/contact/">Contact</a>
+          <a href="https://alphaai.co.ke" target="_blank" rel="noopener">AlphaAI &rarr;</a>
         </div>
       </div>
-    </div>
-  </section>
-
-  <!-- socials -->
-  <section class="h-auto box-border bg-black">
-    <div class="flex flex-row flex-wrap justify-between align-top gap-8 md:gap-2 lg:gap-2 p-10 text-white">
-      <div class="uppercase lg:px-12">
-        <h5 class="font-tickerbit text-sm text-left py-4">[Email]</h5>
-        <a href="mailto:kennethmuchiri7168@gmail.com"
-          class="font-tickerbit text-sm text-left hover:underline underline-offset-4">
-          Email Me <i class="far fa-envelope"></i>
-        </a>
+      <div class="footer-meta">
+        <span>&copy; 2026 Ken Muchiri &middot; Nairobi, Kenya</span>
+        <span>Founder &amp; CEO, AlphaAI &middot; Nairobi, Kenya</span>
       </div>
-      <div class="uppercase gap-4">
-        <h5 class="font-tickerbit text-sm text-left py-4">[Youtube]</h5>
-        <a href="https://www.youtube.com/@code_versity_official">
-          <p class="font-tickerbit text-sm hover:underline">
-            View My Youtube Channel <i class="fab fa-youtube"></i>
-          </p>
-        </a>
-      </div>
-      <div class="uppercase gap-4">
-        <h5 class="font-tickerbit text-sm items-start py-4">[GitHub]</h5>
-        <a href="https://github.com/MuchiriK">
-          <p class="font-tickerbit text-sm hover:underline">
-            My Github <i class="fab fa-github"></i>
-          </p>
-        </a>
-      </div>
-      <div class="uppercase text-white">
-        <h5 class="font-tickerbit text-sm items-start py-4">[Socials]</h5>
-        <div class="flex flex-col font-switzer gap-6">
-          <a href="https://www.linkedin.com/in/kenneth-muchiri-muongi/" target="_blank"
-            class="secondary_link w-inline-block">
-            <div class="hover:text-blue-600 font-tickerbit text-sm hover:underline">
-              LinkedIn <i class="fab fa-linkedin-in"></i>
-            </div>
-          </a>
-          <a href="https://www.instagram.com/_m.u.c.h.i.r.i.i/" target="_blank" class="secondary_link w-inline-block">
-            <div class="hover:text-purple-500 font-tickerbit text-sm hover:underline">
-              Instagram <i class="fab fa-instagram"></i>
-            </div>
-          </a>
-          <a href="https://www.tiktok.com/_m.u.c.h.i.r.i.i/" target="_blank" class="secondary_link w-inline-block">
-            <div class="hover:text-purple-500 font-tickerbit text-sm hover:underline">
-              TikTok <i class="fab fa-tiktok"></i>
-            </div>
-          </a>
-          <a href="https://twitter.com/kenmuchiri_" target="_blank" class="secondary_link w-inline-block">
-            <div class="hover:text-blue-300 font-tickerbit text-sm hover:underline">
-              Twitter <i class="fab fa-twitter"></i>
-            </div>
-          </a>
-          <a href="https://www.facebook.com/kenmuchiri" target="_blank" class="secondary_link w-inline-block">
-            <div class="hover:text-blue-500 font-tickerbit text-sm hover:underline">
-              Facebook <i class="fab fa-facebook-f"></i>
-            </div>
-          </a>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- muchiri -->
-  <section class="flex flex-col h-auto border-t-2 border-white border-b-2">
-    <div class="font-audiowide font-bold py-20 flex w-full">
-      <p class="flex-grow text-center w-full text-6xl sm:text-6xl md:text-9xl lg:text-9xl">
-        MUCHIRI.
-      </p>
-    </div>
-  </section>
-  <!-- Footer -->
-  <footer class="py-6 text-center bg-black">
-    <p class="font-tickerbit text-xs">Made with ❤ by Ken. &copy; <span id="year"></span> All Rights Reserved.</p>
-    <div class="flex justify-center space-x-4 mt-4">
-      <a href="https://github.com/MuchiriK" class="text-yellow-400 hover:text-white"><i class="fab fa-github"></i></a>
-      <a href="https://www.linkedin.com/in/kenneth-muchiri-muongi/" class="text-yellow-400 hover:text-white"><i
-          class="fab fa-linkedin"></i></a>
     </div>
   </footer>
-  <script src="/src/scripts/script.js "></script>
+  <script src="/src/main.js"></script>
 </body>
 
 </html>
