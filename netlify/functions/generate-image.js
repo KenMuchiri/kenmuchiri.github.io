@@ -1,8 +1,13 @@
-const MODEL_ENDPOINT = "https://router.huggingface.co/hf-inference/models/Qwen/Qwen-Image";
+const MODEL_ENDPOINT =
+  "https://router.huggingface.co/hf-inference/models/Qwen/Qwen-Image";
 
 exports.handler = async (event) => {
   if (event.httpMethod !== "POST") {
-    return { statusCode: 405, headers: { Allow: "POST" }, body: "Method not allowed" };
+    return {
+      statusCode: 405,
+      headers: { Allow: "POST" },
+      body: "Method not allowed",
+    };
   }
 
   const token = process.env.HF_TOKEN;
@@ -18,7 +23,10 @@ exports.handler = async (event) => {
   }
 
   if (typeof prompt !== "string" || !prompt.trim() || prompt.length > 2000) {
-    return { statusCode: 400, body: "Please provide a prompt under 2,000 characters." };
+    return {
+      statusCode: 400,
+      body: "Please provide a prompt under 2,000 characters.",
+    };
   }
 
   try {
@@ -32,7 +40,10 @@ exports.handler = async (event) => {
     });
 
     if (!response.ok) {
-      return { statusCode: 502, body: "The image service could not complete the request." };
+      return {
+        statusCode: 502,
+        body: "The image service could not complete the request.",
+      };
     }
 
     const image = Buffer.from(await response.arrayBuffer()).toString("base64");
@@ -46,6 +57,9 @@ exports.handler = async (event) => {
       body: image,
     };
   } catch {
-    return { statusCode: 502, body: "The image service is temporarily unavailable." };
+    return {
+      statusCode: 502,
+      body: "The image service is temporarily unavailable.",
+    };
   }
 };

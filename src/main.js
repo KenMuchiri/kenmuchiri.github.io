@@ -6,9 +6,11 @@ document.addEventListener("DOMContentLoaded", () => {
   const links = document.querySelector(".nav-links");
   if (toggle && links) {
     toggle.addEventListener("click", () => links.classList.toggle("open"));
-    links.querySelectorAll("a").forEach((a) =>
-      a.addEventListener("click", () => links.classList.remove("open"))
-    );
+    links
+      .querySelectorAll("a")
+      .forEach((a) =>
+        a.addEventListener("click", () => links.classList.remove("open")),
+      );
   }
 
   // Mark active nav link
@@ -33,7 +35,7 @@ document.addEventListener("DOMContentLoaded", () => {
           }
         });
       },
-      { threshold: 0.15 }
+      { threshold: 0.15 },
     );
     revealEls.forEach((el) => io.observe(el));
   }
@@ -101,7 +103,9 @@ document.addEventListener("DOMContentLoaded", () => {
         });
 
         if (!response.ok) {
-          throw new Error("The image service could not generate that image. Please try again.");
+          throw new Error(
+            "The image service could not generate that image. Please try again.",
+          );
         }
 
         const image = document.createElement("img");
@@ -111,7 +115,8 @@ document.addEventListener("DOMContentLoaded", () => {
         status.textContent = "Image ready.";
       } catch (error) {
         status.classList.add("error");
-        status.textContent = error.message || "Unable to generate an image right now.";
+        status.textContent =
+          error.message || "Unable to generate an image right now.";
       } finally {
         button.disabled = false;
         buttonText.textContent = "Generate image";

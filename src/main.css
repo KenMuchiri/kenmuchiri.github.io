@@ -447,7 +447,9 @@ p.lede {
 }
 .ai-sandbox-section {
   border-top: 1px solid var(--line);
-  background: linear-gradient(135deg, rgba(0, 229, 255, 0.05), transparent 42%), var(--void-2);
+  background:
+    linear-gradient(135deg, rgba(0, 229, 255, 0.05), transparent 42%),
+    var(--void-2);
 }
 .ai-sandbox-heading {
   display: flex;
@@ -489,7 +491,9 @@ p.lede {
   color: var(--ink);
   font: inherit;
   outline: none;
-  transition: border-color 0.2s, box-shadow 0.2s;
+  transition:
+    border-color 0.2s,
+    box-shadow 0.2s;
 }
 .image-sandbox-form textarea {
   min-height: 142px;
@@ -543,8 +547,16 @@ p.lede {
   overflow: hidden;
   border: 1px solid var(--line);
   background-color: #08080b;
-  background-image: linear-gradient(45deg, #0d0d12 25%, transparent 25%), linear-gradient(-45deg, #0d0d12 25%, transparent 25%), linear-gradient(45deg, transparent 75%, #0d0d12 75%), linear-gradient(-45deg, transparent 75%, #0d0d12 75%);
-  background-position: 0 0, 0 8px, 8px -8px, -8px 0;
+  background-image:
+    linear-gradient(45deg, #0d0d12 25%, transparent 25%),
+    linear-gradient(-45deg, #0d0d12 25%, transparent 25%),
+    linear-gradient(45deg, transparent 75%, #0d0d12 75%),
+    linear-gradient(-45deg, transparent 75%, #0d0d12 75%);
+  background-position:
+    0 0,
+    0 8px,
+    8px -8px,
+    -8px 0;
   background-size: 16px 16px;
 }
 .sandbox-output img {
