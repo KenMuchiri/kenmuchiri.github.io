@@ -73,4 +73,49 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     });
   }
+
+  // Image sandbox — the secret stays on the server, never in the page.
+  const imageForm = document.getElementById("image-sandbox-form");
+  if (imageForm) {
+    imageForm.addEventListener("submit", async (e) => {
+      e.preventDefault();
+      const prompt = document.getElementById("image-prompt").value.trim();
+      const status = document.getElementById("image-sandbox-status");
+      const output = document.getElementById("image-sandbox-output");
+      const button = imageForm.querySelector("button[type=submit]");
+      const buttonText = button.querySelector("span");
+
+      if (!prompt) return;
+      button.disabled = true;
+      buttonText.textContent = "Making image...";
+      status.classList.remove("error");
+      status.textContent = "Qwen is working on it...";
+
+      try {
+        const response = await fetch("/api/generate-image", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({ prompt }),
+        });
+
+        if (!response.ok) {
+          throw new Error("The image service could not generate that image. Please try again.");
+        }
+
+        const image = document.createElement("img");
+        image.src = URL.createObjectURL(await response.blob());
+        image.alt = `Generated image for: ${prompt}`;
+        output.replaceChildren(image);
+        status.textContent = "Image ready.";
+      } catch (error) {
+        status.classList.add("error");
+        status.textContent = error.message || "Unable to generate an image right now.";
+      } finally {
+        button.disabled = false;
+        buttonText.textContent = "Generate image";
+      }
+    });
+  }
 });

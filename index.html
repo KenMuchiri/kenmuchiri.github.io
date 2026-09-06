@@ -126,6 +126,37 @@
     </div>
   </section>
 
+  <section class="ai-sandbox-section" id="ai-sandbox">
+    <div class="wrap">
+      <div class="ai-sandbox-heading reveal">
+        <div>
+          <span class="eyebrow">Try the machine</span>
+          <h2>Give an idea<br>some pixels.</h2>
+        </div>
+        <p class="lede">A small image-making sandbox for turning a scene, product, or possibility into something you can
+          see.</p>
+      </div>
+      <div class="ai-sandbox card reveal">
+        <form id="image-sandbox-form" class="image-sandbox-form">
+          <label class="sandbox-label" for="image-prompt">Your prompt</label>
+          <textarea id="image-prompt" name="prompt" rows="4" required
+            placeholder="A sunlit Nairobi workshop where young builders assemble a friendly service robot, editorial photography"></textarea>
+          <div class="sandbox-controls">
+            <button class="btn btn-primary sandbox-submit" type="submit"><span>Generate image</span><span
+                aria-hidden="true">&rarr;</span></button>
+          </div>
+          <p class="sandbox-status" id="image-sandbox-status" role="status" aria-live="polite"></p>
+        </form>
+        <div class="sandbox-output" id="image-sandbox-output" aria-live="polite">
+          <div class="sandbox-placeholder">
+            <span class="sandbox-placeholder-mark">+</span>
+            <span>Your generated image will appear here.</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <section>
     <div class="wrap">
       <span class="eyebrow reveal">The AlphaAI thesis</span>
@@ -187,17 +218,23 @@
         <article class="card reveal" style="border-top:3px solid var(--green);">
           <div class="mono small" style="color:var(--green); margin-bottom:18px;">01 &middot; SUSTAINABILITY</div>
           <h3>AI that can last</h3>
-          <p style="margin-top:12px; font-size:14px; line-height:1.7;">I am pushing AlphaAI to become a sustainable AI innovation initiative: building responsibly, solving durable problems, and creating value beyond the next demo.</p>
+          <p style="margin-top:12px; font-size:14px; line-height:1.7;">I am pushing AlphaAI to become a sustainable AI
+            innovation initiative: building responsibly, solving durable problems, and creating value beyond the next
+            demo.</p>
         </article>
         <article class="card reveal" style="border-top:3px solid var(--cyan);">
           <div class="mono small" style="color:var(--cyan); margin-bottom:18px;">02 &middot; COMMUNITY</div>
           <h3>More builders in the room</h3>
-          <p style="margin-top:12px; font-size:14px; line-height:1.7;">From Nairobi and beyond, I am growing a community of young techies who learn together, build boldly, and see themselves as authors of Africa&rsquo;s technical future.</p>
+          <p style="margin-top:12px; font-size:14px; line-height:1.7;">From Nairobi and beyond, I am growing a community
+            of young techies who learn together, build boldly, and see themselves as authors of Africa&rsquo;s technical
+            future.</p>
         </article>
         <article class="card reveal" style="border-top:3px solid var(--amber);">
           <div class="mono small" style="color:var(--amber); margin-bottom:18px;">03 &middot; ACCESS</div>
           <h3>Useful AI for everyone</h3>
-          <p style="margin-top:12px; font-size:14px; line-height:1.7;">The goal is not to make AI feel exclusive.I am working toward tools that are understandable, affordable, and relevant to the people and businesses they are meant to serve.</p>
+          <p style="margin-top:12px; font-size:14px; line-height:1.7;">The goal is not to make AI feel exclusive.I am
+            working toward tools that are understandable, affordable, and relevant to the people and businesses they are
+            meant to serve.</p>
         </article>
       </div>
     </div>
