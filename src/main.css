@@ -711,6 +711,21 @@ p.lede {
   background: rgba(244, 240, 232, 0.88);
   backdrop-filter: blur(14px);
 }
+.blog-page .nav-toggle {
+  color: #1d2521;
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  border: 1px solid #d4cec1;
+  border-radius: 3px;
+  line-height: 1;
+}
+.blog-page .nav-toggle:hover,
+.blog-page .nav-toggle:focus-visible {
+  color: #b84f3d;
+  border-color: #b84f3d;
+  outline: none;
+}
 .blog-page .brand {
   color: #1d2521;
   font-family: "Cormorant Garamond", Georgia, serif;
