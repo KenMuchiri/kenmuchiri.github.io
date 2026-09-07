@@ -332,6 +332,44 @@ a {
   }
 }
 
+@media (max-width: 639px) {
+  .wrap {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .site-nav {
+    padding: 14px 20px;
+  }
+  .nav-links {
+    top: 57px;
+  }
+  .nav-links a {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  section {
+    padding: 80px 0;
+  }
+  section.tight {
+    padding: 56px 0;
+  }
+  .about-hero {
+    gap: 28px;
+  }
+  .about-hero h1 {
+    font-size: 48px;
+  }
+  .about-hero .lede {
+    font-size: 17px;
+  }
+  .about-thread {
+    gap: 34px !important;
+  }
+  .about-thread > div {
+    flex-basis: 100%;
+  }
+}
+
 /* ---------- Sections ---------- */
 section {
   padding: 120px 0;
@@ -847,6 +885,39 @@ footer {
   justify-content: space-between;
   flex-wrap: wrap;
   gap: 10px;
+}
+
+@media (max-width: 639px) {
+  footer {
+    padding: 56px 0 24px;
+  }
+  .footer-name {
+    font-size: 50px;
+    letter-spacing: -1px;
+  }
+  .footer-grid {
+    align-items: flex-start;
+    gap: 28px;
+    margin-top: 32px;
+  }
+  .footer-grid > p {
+    width: 100%;
+    margin: 0;
+  }
+  .footer-links {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 16px 20px;
+    line-height: 1.4;
+  }
+  .footer-meta {
+    flex-direction: column;
+    gap: 8px;
+    margin-top: 32px;
+    line-height: 1.5;
+    overflow-wrap: anywhere;
+  }
 }
 
 /* ---------- Fade-in on scroll ----------
