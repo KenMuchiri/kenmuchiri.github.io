@@ -944,18 +944,21 @@ footer {
 /* ---------- Fade-in on scroll ----------
    Progressive enhancement: content is visible by default (safe for
    crawlers, social-preview scrapers, and slow/failed JS). JS adds
-   .js-ready to <html> once it can safely animate, then toggles .in
-   per element via IntersectionObserver. */
+   .js-ready to <html> once it can safely animate, then toggles
+   .reveal-ready (hidden) and finally .in (visible) per element via
+   IntersectionObserver. Nothing here depends on a named @keyframes
+   animation, so there's no failure mode where the animation name
+   silently doesn't match and the element is stuck invisible. */
 .reveal {
   transition:
     opacity 0.7s ease,
     transform 0.7s ease;
 }
-html.js-ready .reveal {
+html.js-ready .reveal.reveal-ready {
   opacity: 0;
   transform: translateY(24px);
 }
-html.js-ready .reveal.in {
+html.js-ready .reveal.reveal-ready.in {
   opacity: 1;
   transform: translateY(0);
 }

@@ -22,22 +22,37 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 
-  // Scroll reveal — only hide content once JS proves it can reveal it again
+  // Scroll reveal — add the hide class only after the first paint so the text
+  // does not flash and disappear on refresh.
   const revealEls = document.querySelectorAll(".reveal");
   if ("IntersectionObserver" in window && revealEls.length) {
     document.documentElement.classList.add("js-ready");
-    const io = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            entry.target.classList.add("in");
-            io.unobserve(entry.target);
-          }
-        });
-      },
-      { threshold: 0.15 },
-    );
-    revealEls.forEach((el) => io.observe(el));
+
+    requestAnimationFrame(() => {
+      revealEls.forEach((el) => el.classList.add("reveal-ready"));
+
+      const io = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add("in");
+              io.unobserve(entry.target);
+            }
+          });
+        },
+        // threshold: 0 + a small negative rootMargin fires as soon as any
+        // part of a target enters the viewport. This matters a lot for the
+        // blog: article bodies are often wrapped in a single tall .reveal
+        // container, and a "15% of the element visible" threshold can
+        // require scrolling most of the way through a long post before it
+        // ever satisfies — which read as the reveal being "stuck" and the
+        // text staying invisible. Triggering on first contact instead of
+        // on-screen area fixes that regardless of how tall the element is.
+        { threshold: 0, rootMargin: "0px 0px -10% 0px" },
+      );
+
+      revealEls.forEach((el) => io.observe(el));
+    });
   }
 
   // Contact form — basic client-side handling (Formspree endpoint)
